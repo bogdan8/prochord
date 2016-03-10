@@ -203,4 +203,9 @@ $(document).ready(function () {
         $('#song-body-fonts').css('font-family', value_family);
     });
     /**------------------------ End change font-size in cartSong -------------------------- */
+    /**------------------------ Fancybox -------------------------- */
+    $(".img-thumbnail").each(function () {
+        $(this).fancybox({openEffect: 'elastic', minWidth: '250', minHeight: '300', closeEffect: 'elastic', href: $(this).attr('src')});
+    });
+    /**------------------------ End Fancybox -------------------------- */
 });

@@ -12,7 +12,6 @@ use App\Models\Voting;
 use App\Models\VotingIp;
 use App\Models\VotingList;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Response;
 
 class SongController extends MainController
 {
@@ -25,7 +24,7 @@ class SongController extends MainController
         if ($request->has('body')) {
             $validator = IndexComment::validate(\Input::all());
             if ($validator->fails()) {
-                return Response::json([
+                return \Response::json([
                     'success' => false,
                     'errors' => $validator->errors()->toArray()
                 ]);
@@ -37,7 +36,7 @@ class SongController extends MainController
                 $indexComment->date = date("Y-m-d h:i:s");
                 $indexComment->save();
 
-                return Response::json([
+                return \Response::json([
                     'success' => trans('translation.Ваш_коментар_успішно_добавлений')
                 ]);
             }
@@ -73,7 +72,7 @@ class SongController extends MainController
             $people_ip = $_SERVER ['REMOTE_ADDR'];
             $getAddress = $votingIp->getActiveCheck($voting_id, $people_ip);// Витягую всі ip адреси та індифікатори голосування для перевірки
             if ($getAddress) {
-                return Response::json([
+                return \Response::json([
                     'success' => false,
                     'errors' => trans('translation.З_вашої_ip_уже_голосували')
                 ]);
@@ -92,7 +91,7 @@ class SongController extends MainController
                 /** --------------------------------------------------------------
                  *  Calculates the percentage of the vote
                  * -----------------------------------------------------------------*/
-                return Response::json([
+                return \Response::json([
                     'success' => trans('translation.Ви_успішно_проголосували')
                 ]);
             }
@@ -131,7 +130,7 @@ class SongController extends MainController
         $this->data['most_popular'] = $song->most_popular();
         $this->data['last_add'] = $song->last_add();
         if ($request->ajax()) {
-            return response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());
+            return \response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());
         }
         return view('song.listSong', $this->data);
     }
@@ -155,7 +154,7 @@ class SongController extends MainController
         $this->data['most_popular'] = $song->most_popular_sort($item);
         $this->data['last_add'] = $song->last_add_sort($item);
         if ($request->ajax()) {
-            return response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());
+            return \response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());
         }
         return view('song.listSong', $this->data);
     }
@@ -195,7 +194,7 @@ class SongController extends MainController
          * Кінець
          * ----------------------------------------------------------------**/
         if ($request->ajax()) {
-            return response()->json(view('song.ajaxPaginate.SongsInCategory', $this->data)->render());
+            return \response()->json(view('song.ajaxPaginate.SongsInCategory', $this->data)->render());
         }
         return view('song.songsInCategory', $this->data);
 
@@ -209,7 +208,7 @@ class SongController extends MainController
         if ($request->has('songId')) {
             $validator = SongComment::validate(\Input::all());
             if ($validator->fails()) {
-                return Response::json([
+                return \Response::json([
                     'success' => false,
                     'errors' => $validator->errors()->toArray()
                 ]);
@@ -222,7 +221,7 @@ class SongController extends MainController
                 $songComment->date = date("Y-m-d h:i:s");
                 $songComment->save();
 
-                return Response::json([
+                return \Response::json([
                     'success' => trans('translation.Ваш_коментар_успішно_добавлений')
                 ]);
             }
@@ -300,7 +299,7 @@ class SongController extends MainController
         if ($request->has('songId')) {
             $validator = SongComment::validate(\Input::all());
             if ($validator->fails()) {
-                return Response::json([
+                return \Response::json([
                     'success' => false,
                     'errors' => $validator->errors()->toArray()
                 ]);
@@ -313,7 +312,7 @@ class SongController extends MainController
                 $songComment->date = date("Y-m-d h:i:s");
                 $songComment->save();
 
-                return Response::json([
+                return \Response::json([
                     'success' => trans('translation.Ваш_коментар_успішно_добавлений')
                 ]);
             }
@@ -396,7 +395,7 @@ class SongController extends MainController
         if ($request->has('tabulature')) {
             $validator = AddSong::validate(\Input::all());
             if ($validator->fails()) {
-                return Response::json([
+                return \Response::json([
                     'success' => false,
                     'errors' => $validator->errors()->toArray()
                 ]);
@@ -412,7 +411,7 @@ class SongController extends MainController
                 $AddSong->body = $request->get('body');
                 $AddSong->save();
 
-                return Response::json([
+                return \Response::json([
                     'success' => trans('translation.Ваша_пісня_успішно_додана')
                 ]);
             }
@@ -434,7 +433,7 @@ class SongController extends MainController
             $sortBy = $input['sortBy'];
             $this->data['performer'] = $performer->sortPerformer($sort, $sortBy);
         } else {
-            $this->data['performer'] = $performer->getActive();
+            $this->data['performer'] = $performer->getActivePag();
         }
         /**-------------------------------------------------------------
          * Кінець сортування списку виконавців
@@ -448,7 +447,7 @@ class SongController extends MainController
          * Кінець
          * ----------------------------------------------------------------**/
         if ($request->ajax()) {
-            return response()->json(view('song.ajaxPaginate.ListPerformer', $this->data)->render());
+            return \response()->json(view('song.ajaxPaginate.ListPerformer', $this->data)->render());
         }
         return view('song.listPerformer', $this->data);
     }
@@ -473,7 +472,7 @@ class SongController extends MainController
          * ----------------------------------------------------------------**/
         $this->data['cartPerformer'] = $performer->onePerformer($title);
         if ($request->ajax()) {
-            return response()->json(view('song.ajaxPaginate.CartPerformer', $this->data)->render());
+            return \response()->json(view('song.ajaxPaginate.CartPerformer', $this->data)->render());
         }
         return view('song.cartPerformer', $this->data);
 

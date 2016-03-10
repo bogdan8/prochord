@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<head>
-    <title>Помилка</title>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <title>Be right back.</title>
 
-    <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-    <style>
-        html, body {
-            height: 100%;
-        }
+        <style>
+            html, body {
+                height: 98%;
+            }
 
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            color: #B0BEC5;
-            display: table;
-            font-weight: 100;
-            font-family: 'Lato';
-        }
+            body {
+                background: url(/image/errors/fon_error.jpg)  center center fixed;
+                background-size: 100%;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: #B0BEC5;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
 
-        .container {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
 
-        .content {
-            text-align: center;
-            display: inline-block;
-        }
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
 
-        .title {
-            color: #4CAE4C;
-            font-size: 42px;
-            margin-bottom: 40px;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="content">
-        <div class="title">{{trans('translation.404_Сторінка_не_знайдена!_Будь_ласка,_перейдіть_назад_на_головну!')}}</div>
-        <a class="title"
-           href="/">{{trans('translation.Назад_на_головну!')}}</a>
-    </div>
-</div>
-</body>
+            .title {
+                font-size: 40px;
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="title">404 Сторінку незнайдено</div>
+                <div class="title">Нажміть<a href="/"> тут </a> щоб повернутись на головну!</div>
+            </div>
+        </div>
+    </body>
 </html>

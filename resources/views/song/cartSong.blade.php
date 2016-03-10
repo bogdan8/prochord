@@ -37,14 +37,10 @@
                     <div class="panel-heading">
                         <h3 class="panel-title">
                             <div class="row">
-                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
                                     <p style="margin-top: 10px;">{!! $cartSong->title!!}</p>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                     <span class="view-song">
-                                        <i class="fa fa-eye"></i>
-                                         {{$cartSong->count_views_song}}
-                                     </span>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                     @if(isset($error_like))
                                         <script>
                                             alert('{{trans('translation.З_вашої_ip_уже_голосували')}}');
@@ -82,8 +78,10 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <p style="text-align: center; font: italic 14pt 'Times New Roman',Times,serif;">{!! $cartSong->title!!}</p>
-
+                            <p style="text-align: center; font: italic 14pt 'Times New Roman',Times,serif;">{!! $cartSong->title!!}
+                                <i class="fa fa-eye"></i>
+                                {{$cartSong->count_views_song}}
+                            </p>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

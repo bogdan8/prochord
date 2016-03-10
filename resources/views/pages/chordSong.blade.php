@@ -17,7 +17,7 @@
                 @foreach($chordSong as $item)
                     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
                         <h2 style="text-align: center;">{{$item->title}}</h2>
-                        <img class="img-thumbnail" style="height: 200px;" src="/uploads/chord/original/{{$item->image}}"/>
+                        <img class="img-thumbnail" src="/uploads/chord/original/{{$item->image}}"/>
                     </div>
                 @endforeach
             </div>

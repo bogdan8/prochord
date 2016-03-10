@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Response;
-
 use App\Models\Song;
 use App\Models\ChordSong;
 use App\Models\Search;

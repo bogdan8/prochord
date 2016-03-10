@@ -24,7 +24,7 @@ class Performer extends Model
      * ----------------------------------------------------------------**/
     public function getActive()
     {
-        return $this->published()->orderBy('title', 'asc')->paginate(30);
+        return $this->published()->orderBy('title', 'asc')->get();
     }
     /**-------------------------------------------------------------
      * Кінець
@@ -64,7 +64,7 @@ class Performer extends Model
      * ----------------------------------------------------------------**/
     public function sortPerformer($sort, $sortBy)
     {
-        return $this->published()->orderBy($sort, $sortBy)->get();
+        return $this->published()->orderBy($sort, $sortBy)->paginate(30);
 
     }
     /**-------------------------------------------------------------
