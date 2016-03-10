@@ -2,10 +2,10 @@
     <div class="carousel-inner">
         @foreach($slider as $item)
             <div class="active">
-                <img class="SlidersImg" src="/uploads/slides/large/{{$item->image}}">
+                <img class="Sliders-img" src="/uploads/slides/large/{{$item->image}}">
             </div>
         @endforeach
-        <div class="flags_position">
+        <div class="flags-position">
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 <a rel="alternate" hreflang="{{$localeCode}}"
                    href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">

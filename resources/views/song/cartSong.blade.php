@@ -41,7 +41,7 @@
                                     <p style="margin-top: 10px;">{!! $cartSong->title!!}</p>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                     <span class="view_song">
+                                     <span class="view-song">
                                         <i class="fa fa-eye"></i>
                                          {{$cartSong->count_views_song}}
                                      </span>
@@ -58,19 +58,19 @@
                                             alert('{{trans('translation.Вам_не_сподобалось')}}');
                                         </script>
                                     @endif
-                                    {!! Form::open(['method'=>'POST','class'=>'formUnLike']) !!}<br/>
+                                    {!! Form::open(['method'=>'POST','class'=>'form-un-like']) !!}<br/>
                                     {!! Form::text('song_id',$cartSong -> id,['id' => 'UnLikeId','style' => 'display:none']) !!}
                                     <p>{!! $cartSong->UnLike !!}
                                         {!! Form::button('<i class="fa fa-thumbs-o-down"></i>',['class'=>'btn btn-danger','type'=>'submit', 'name'=>'UnLike']) !!}
                                     </p>
                                     {!! Form::close() !!}
-                                    {!! Form::open(['method'=>'POST','class'=>'formLike']) !!}<br/>
+                                    {!! Form::open(['method'=>'POST','class'=>'form-like']) !!}<br/>
                                     {!! Form::text('song_id',$cartSong->id,['id' => 'LikeId','style' => 'display:none']) !!}
                                     <p>{!! $cartSong->Like !!}
                                         {!! Form::button('<i class="fa fa-thumbs-o-up"></i>',['class'=>'btn btn-success','type'=>'submit', 'name'=>'Like']) !!}
                                     </p>
                                     {!! Form::close() !!}
-                                    <div class="heart_song">
+                                    <div class="heart-song">
                                         <span>
                                             <i class="fa fa-heart-o"></i>
                                             {{$cartSong->heart}}

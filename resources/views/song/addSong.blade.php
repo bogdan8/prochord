@@ -41,7 +41,7 @@
                             <br/>
                             {!! Form::label(trans('translation.Виберіть_виконавця').' *:') !!}
                             <div class="btn-group bootstrap-select" style="margin-top: 0px;">
-                                <select name="performer" id="performer" class="form_control">
+                                <select name="performer" id="performer" class="form-control">
                                     <option disabled>{{trans('translation.Виконавці')}}:</option>
                                     @foreach($performer as $item)
                                         <option value="{{$item->id}}">{{$item->title}}</option>
@@ -53,7 +53,7 @@
                             <br/>
                             {!! Form::label(trans('translation.Виберіть_категорію').' *:') !!}
                             <div class="btn-group bootstrap-select" style="margin-top: 0px;">
-                                <select name="category" id="category" class="form_control">
+                                <select name="category" id="category" class="form-control">
                                     <option disabled>{{trans('translation.Категорії')}}:</option>
                                     @foreach($category as $item)
                                         @if($url_lang == 'uk')

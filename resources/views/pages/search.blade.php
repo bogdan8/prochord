@@ -39,14 +39,14 @@
                                 <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
                                 </div>
                                 <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                    {!! HTML::image('/image/errors/searchError.png', 'error' , ['class'=>'search_error_img']) !!}
+                                    {!! HTML::image('/image/errors/searchError.png', 'error' , ['class'=>'search-error-img']) !!}
                                 </div>
                                 <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h1 class="search_error_text">{{trans('translation.За_вашим_запитом_нічого_не_знайдено')}}</h1>
+                                    <h1 class="search-error-text">{{trans('translation.За_вашим_запитом_нічого_не_знайдено')}}</h1>
                                 </div>
                             </div>
                         @endif

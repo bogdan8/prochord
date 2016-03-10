@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="footer-copyright">&copy;
                     2016 {{trans('translation.Пісні_під_гітару')}}!
-                    <div id="count_views_site">
+                    <div id="count-views-site">
                         <!--LiveInternet counter-->
                         <script type="text/javascript">
                             <!--
