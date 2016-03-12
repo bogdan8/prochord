@@ -167,7 +167,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <h2 class="section-heading">{{trans('translation.Відео')}}</h2>
 
-                                    <p>{!! $cartSong->video!!}</p>
+                                    <p style="height: 300px">{!! $cartSong->video!!}</p>
                                 </div>
                             @endif
                             @if(!empty($cartSong->note))
@@ -295,12 +295,19 @@
                                 <h3 class="panel-title"><p>{!! $item->name !!}</p></h3>
                             </div>
                             <div class="panel-body">
-                                <strong>{{trans('translation.Дата')}}:</strong>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <img class="img-comment" src="/image/guitar/guitar-{{rand(1,4)}}.jpg">
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <strong>{!! trans('translation.Текст') !!} :</strong>
 
-                                <p>{!! $item->date !!}</p>
-                                <strong>{{trans('translation.Текст')}}:</strong>
+                                        <p>{!! nl2br($item->body) !!}</p>
+                                        <strong>{!! trans('translation.Дата') !!} :</strong>
 
-                                <p>{!! $item->body !!}</p>
+                                        <p>{!! $item->date !!}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     @endforeach

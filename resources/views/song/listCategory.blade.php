@@ -102,10 +102,10 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                                         <img class="img-comment" src="/image/guitar/guitar-{{rand(1,4)}}.jpg">
                                     </div>
-                                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                                         <strong>{!! trans('translation.Текст') !!} :</strong>
 
                                         <p>{!! nl2br($item->body) !!}</p>

@@ -459,8 +459,8 @@ textarea.form_control {
 }
 
 .img-comment {
-    width: auto;
-    height: 100%;
+    width: 60%;
+    height: 150px;
 }
 
 .who-added-song {
