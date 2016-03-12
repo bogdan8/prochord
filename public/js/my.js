@@ -72,6 +72,7 @@ $(document).ready(function () {
         e.preventDefault();
         var formData = new FormData();
         formData.append('name', $('#name').val());
+        formData.append('you_name', $('#you_name').val());
         formData.append('description', $('#description').val());
         formData.append('active', $('#active').val());
         formData.append('category', $('#category').val());

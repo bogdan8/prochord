@@ -463,3 +463,11 @@ textarea.form_control {
     height: 100%;
 }
 
+.who-added-song {
+    text-align: center;
+}
+
+.title-song {
+    text-align: center;
+    font: italic 14pt 'Times New Roman', Times, serif;
+}

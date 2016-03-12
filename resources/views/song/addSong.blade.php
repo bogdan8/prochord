@@ -33,6 +33,9 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             {!! Form::open(['method'=>'POST' , 'id'=>'formAddSong']) !!}<br/>
+                            {!! Form::label(trans("translation.Ваше_ім'я").' *:') !!}
+                            {!! Form::text('you_name',null,['id'=>'you_name','placeholder'=>trans("translation.Ваше_ім'я").' :','required','class'=>'form-control'],Input::old('name')) !!}
+                            <br/>
                             {!! Form::label(trans('translation.Назва_пісні').' *:') !!}
                             {!! Form::text('name',null,['id'=>'name','placeholder'=>trans('translation.Назва_пісні').' :','required','class'=>'form-control'],Input::old('name')) !!}
                             <br/>

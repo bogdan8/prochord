@@ -215,6 +215,11 @@ return [
     'живе_в' => 'lives in',
     'Біографія' => 'Biography',
     'біографія' => 'biography',
+    'Дякуємо' => 'Thanks',
+    'дякуємо' => 'thanks',
+    'за_добавлену_пісню' => 'for added song',
+    "Ваше_ім'я" => 'Your name',
+    "ваше_ім'я" => 'your name',
     /* performer */
 
 ];

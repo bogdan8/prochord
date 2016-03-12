@@ -4,6 +4,7 @@
     <title>{{$cartSong->title}}</title>
     <div class="container">
         <div class="row">
+            <!-- Breadcrumb -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ol class="breadcrumb">
                     <li><a href="/">{{trans('translation.Головна')}}</a></li>
@@ -30,6 +31,7 @@
                     <li>{{$cartSong->title}}</li>
                 </ol>
             </div>
+            <!-- End breadcrumb -->
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
@@ -41,6 +43,7 @@
                                     <p style="margin-top: 10px;">{!! $cartSong->title!!}</p>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <!-- Alert this errors -->
                                     @if(isset($error_like))
                                         <script>
                                             alert('{{trans('translation.З_вашої_ip_уже_голосували')}}');
@@ -53,35 +56,40 @@
                                         <script>
                                             alert('{{trans('translation.Вам_не_сподобалось')}}');
                                         </script>
-                                    @endif
-                                    {!! Form::open(['method'=>'POST','class'=>'form-un-like']) !!}<br/>
-                                    {!! Form::text('song_id',$cartSong -> id,['id' => 'UnLikeId','style' => 'display:none']) !!}
-                                    <p>{!! $cartSong->UnLike !!}
-                                        {!! Form::button('<i class="fa fa-thumbs-o-down"></i>',['class'=>'btn btn-danger','type'=>'submit', 'name'=>'UnLike']) !!}
-                                    </p>
-                                    {!! Form::close() !!}
-                                    {!! Form::open(['method'=>'POST','class'=>'form-like']) !!}<br/>
-                                    {!! Form::text('song_id',$cartSong->id,['id' => 'LikeId','style' => 'display:none']) !!}
-                                    <p>{!! $cartSong->Like !!}
-                                        {!! Form::button('<i class="fa fa-thumbs-o-up"></i>',['class'=>'btn btn-success','type'=>'submit', 'name'=>'Like']) !!}
-                                    </p>
-                                    {!! Form::close() !!}
-                                    <div class="heart-song">
+                                        @endif
+                                                <!-- End alert this errors -->
+                                        <!-- Form like and unLike -->
+                                        {!! Form::open(['method'=>'POST','class'=>'form-un-like']) !!}<br/>
+                                        {!! Form::text('song_id',$cartSong -> id,['id' => 'UnLikeId','style' => 'display:none']) !!}
+                                        <p>{!! $cartSong->UnLike !!}
+                                            {!! Form::button('<i class="fa fa-thumbs-o-down"></i>',['class'=>'btn btn-danger','type'=>'submit', 'name'=>'UnLike']) !!}
+                                        </p>
+                                        {!! Form::close() !!}
+                                        {!! Form::open(['method'=>'POST','class'=>'form-like']) !!}<br/>
+                                        {!! Form::text('song_id',$cartSong->id,['id' => 'LikeId','style' => 'display:none']) !!}
+                                        <p>{!! $cartSong->Like !!}
+                                            {!! Form::button('<i class="fa fa-thumbs-o-up"></i>',['class'=>'btn btn-success','type'=>'submit', 'name'=>'Like']) !!}
+                                        </p>
+                                        {!! Form::close() !!}
+                                                <!-- End form like and unLike -->
+                                        <div class="heart-song">
                                         <span>
                                             <i class="fa fa-heart-o"></i>
                                             {{$cartSong->heart}}
                                         </span>
-                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </h3>
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <p style="text-align: center; font: italic 14pt 'Times New Roman',Times,serif;">{!! $cartSong->title!!}
+                            <!-- song description shows -->
+                            <p class="title-song">{!! $cartSong->title!!}
                                 <i class="fa fa-eye"></i>
                                 {{$cartSong->count_views_song}}
                             </p>
+
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -120,6 +128,7 @@
                                         @endif()
                                     </div>
                                 </div>
+                                <!-- text settings -->
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                                         <h4 style="color: #1B602C;">{{trans('translation.Шрифт')}} :</h4>
@@ -140,6 +149,7 @@
                                         <p id="decrease" class="btn btn-primary" style="float: left;">-</p>
                                     </div>
                                 </div>
+                                <!-- End text settings -->
                                 <div class="row">
                                     <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
                                     </div>
@@ -148,6 +158,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- End song description shows -->
                         </div>
                         <div class="row">
                             @if(!empty($cartSong->video))
@@ -182,6 +193,7 @@
                             @endif
                         </div>
                     </div>
+                    <!-- script to share the song in social networks-->
                     <script type="text/javascript">(function () {
                             if (window.pluso)if (typeof window.pluso.start == "function") return;
                             if (window.ifpluso == undefined) {
@@ -194,7 +206,8 @@
                                 var h = d[g]('body')[0];
                                 h.appendChild(s);
                             }
-                        })();</script>
+                        })();
+                    </script>
                     <div data-description="{!! strtr($cartSong->body,"_"," ")!!}" style="margin-left: 20px; "
                          data-title="{{$cartSong->title}}"
                          data-url="http://test.ifka.kr.ua/songs/{{$cartSong->title}}" class="pluso"
@@ -203,6 +216,8 @@
                          data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print">
 
                     </div>
+                    <!-- End script to share the song in social networks-->
+                    <h3 class="who-added-song">{{trans('translation.Дякуємо').' `'.$cartSong->who_added.'`'}} {{trans('translation.за_добавлену_пісню')}}</h3>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -258,6 +273,7 @@
                 </div>
             </div>
         </div>
+        <!-- Show song comments-->
         @if(!empty($songComment['0']))
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -290,41 +306,44 @@
                     @endforeach
                 </div>
             </div>
-        @endif
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{{trans('translation.Додати_коментар')}}</h2>
+            @endif
+                    <!-- End show song comments-->
+            <!-- Add song comments-->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{trans('translation.Додати_коментар')}}</h2>
 
-                <h3 class="section-subheading">{{trans('translation.Тут_ви_можете_додати_свій_коментарій')}}</h3>
-            </div>
-            <div class="alert alert-danger info">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>{{trans('translation.Помилка')}}</strong>
-                <ul></ul>
-            </div>
-            <div class="alert alert-success infoSuccess">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>{{trans('translation.Успішно')}}</strong>
-                <ul></ul>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                {!! Form::open(['method'=>'POST' , 'id'=>'formSong']) !!}<br/>
-                {!! Form::label(trans('translation.Ваше_імя').' *:') !!}
-                {!! Form::text('name',null,['id'=>'name','placeholder'=>trans('translation.Ваше_імя').' :','required','class'=>'form-control'],Input::old('name')) !!}
-                <br/>
-                {!! Form::label(trans('translation.Ваш_email').' *:') !!}
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">@</span>
-                    {!! Form::text('email',null,['id'=>'email','placeholder'=>trans('translation.Ваш_email').' :','required','class'=>'form-control'],Input::old('email')) !!}
+                    <h3 class="section-subheading">{{trans('translation.Тут_ви_можете_додати_свій_коментарій')}}</h3>
                 </div>
-                {!! Form::textarea('songId',$cartSong -> id,['id'=>'songId' , 'style'=>'display:none']) !!}
-                <br/>
-                {!! Form::label(trans('translation.Ваш_текст').' *:') !!}
-                {!! Form::textarea('body',null,['id'=>'body','placeholder'=>trans('translation.Ваш_текст').' :','required', 'class'=>'form-control','rows'=>'5'],Input::old('body')) !!}
-                <br/>
-                {!! Form::submit(trans('translation.Коментувати'),['class'=>'btn btn-primary']) !!}
-                {!! Form::close() !!}
+                <div class="alert alert-danger info">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>{{trans('translation.Помилка')}}</strong>
+                    <ul></ul>
+                </div>
+                <div class="alert alert-success infoSuccess">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>{{trans('translation.Успішно')}}</strong>
+                    <ul></ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    {!! Form::open(['method'=>'POST' , 'id'=>'formSong']) !!}<br/>
+                    {!! Form::label(trans('translation.Ваше_імя').' *:') !!}
+                    {!! Form::text('name',null,['id'=>'name','placeholder'=>trans('translation.Ваше_імя').' :','required','class'=>'form-control'],Input::old('name')) !!}
+                    <br/>
+                    {!! Form::label(trans('translation.Ваш_email').' *:') !!}
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">@</span>
+                        {!! Form::text('email',null,['id'=>'email','placeholder'=>trans('translation.Ваш_email').' :','required','class'=>'form-control'],Input::old('email')) !!}
+                    </div>
+                    {!! Form::textarea('songId',$cartSong -> id,['id'=>'songId' , 'style'=>'display:none']) !!}
+                    <br/>
+                    {!! Form::label(trans('translation.Ваш_текст').' *:') !!}
+                    {!! Form::textarea('body',null,['id'=>'body','placeholder'=>trans('translation.Ваш_текст').' :','required', 'class'=>'form-control','rows'=>'5'],Input::old('body')) !!}
+                    <br/>
+                    {!! Form::submit(trans('translation.Коментувати'),['class'=>'btn btn-primary']) !!}
+                    {!! Form::close() !!}
+                </div>
             </div>
-        </div>
+            <!-- End add song comments-->
     </div>
 @stop

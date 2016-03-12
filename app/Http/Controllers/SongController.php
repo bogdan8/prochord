@@ -402,6 +402,7 @@ class SongController extends MainController
                 $AddSong = new AddSong();
                 $AddSong->active = '0';
                 $AddSong->title = $request->get('name');
+                $AddSong->who_added = $request->get('you_name');
                 $AddSong->slug = $request->get('name') . '_user';
                 $AddSong->description = $request->get('description');
                 $AddSong->performer_id = $request->get('performer');
