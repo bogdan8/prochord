@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+    /**------------------------ Ajax form add comment to main page -------------------------- */
     var info = $('.info');
     var infoSuccess = $('.infoSuccess');
     $('#form').submit(function (e) {
@@ -32,6 +33,8 @@ $(document).ready(function () {
             }
         });
     });
+    /**------------------------ Ajax form add comment to main page -------------------------- */
+    /**------------------------ Ajax form add a comment to the song -------------------------- */
     $('#formSong').submit(function (e) {
         e.preventDefault();
         var formData = new FormData();
@@ -63,6 +66,8 @@ $(document).ready(function () {
             }
         });
     });
+    /**------------------------ Ajax form add a comment to the song -------------------------- */
+    /**------------------------ Ajax form add a song -------------------------- */
     $('#formAddSong').submit(function (e) {
         e.preventDefault();
         var formData = new FormData();
@@ -97,6 +102,8 @@ $(document).ready(function () {
             }
         });
     });
+    /**------------------------ End ajax form add a song -------------------------- */
+    /**------------------------ Button scroll to the top -------------------------- */
     window.onload = function () {
         var scrollUp = document.getElementById('scrollUp');
         scrollUp.onmouseover = function () {
@@ -118,6 +125,8 @@ $(document).ready(function () {
             }
         };
     };
+    /**------------------------ End button scroll to the top -------------------------- */
+    /**------------------------ Check the screen size to display some elements -------------------------- */
     if ($(window).width() < 500) {
         $(".computer-title").css('display', 'none');
         $(".phone-title").css('display', 'block');
@@ -126,6 +135,8 @@ $(document).ready(function () {
     if ($(window).width() > 1300) {
         $(".alphabet-block").css('display', 'block');
     }
+    /**------------------------ End check the screen size to display some elements -------------------------- */
+    /**------------------------ Ajax paginates -------------------------- */
     $(document).on('click', '.ajaxPaginatesIndex .pagination a', function (e) {
         e.preventDefault();
         var page = $(this).attr('href').split('page=')[1];
@@ -145,8 +156,9 @@ $(document).ready(function () {
                 }
             }
         });
-        s
     });
+    /**------------------------ End ajax paginates -------------------------- */
+    /**------------------------ Ajax voting form submit -------------------------- */
     var infoSuccessVoting = $('.infoSuccessVoting');
     var infoErrorVoting = $('.infoErrorVoting');
     var inp = document.getElementsByName('voting');
@@ -185,6 +197,7 @@ $(document).ready(function () {
             });
         })
     }
+    /**------------------------ End ajax voting form submit -------------------------- */
     /**------------------------ Change font-size in cartSong -------------------------- */
     $('#value').text('14');
     var value_font = '14';
@@ -205,7 +218,13 @@ $(document).ready(function () {
     /**------------------------ End change font-size in cartSong -------------------------- */
     /**------------------------ Fancybox -------------------------- */
     $(".img-thumbnail").each(function () {
-        $(this).fancybox({openEffect: 'elastic', minWidth: '250', minHeight: '300', closeEffect: 'elastic', href: $(this).attr('src')});
+        $(this).fancybox({
+            openEffect: 'elastic',
+            minWidth: '250',
+            minHeight: '300',
+            closeEffect: 'elastic',
+            href: $(this).attr('src')
+        });
     });
     /**------------------------ End Fancybox -------------------------- */
 });

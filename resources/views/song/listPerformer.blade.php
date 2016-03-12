@@ -9,7 +9,7 @@
                     <li>{{trans('translation.Виконавці')}}</li>
                 </ol>
             </div>
-            @include("song.top_performer")
+            @include("song.sort.top_performer")
         </div>
     </div>
     <div class="container">

@@ -11,21 +11,22 @@ class CreateSongTable extends Migration
         Schema::create('song', function (Blueprint $table) {
             $table->increments('id');
             $table->boolean('active');
+            $table->integer('categorySong_id');
+            $table->integer('performer_id');
             $table->string('title');
             $table->string('slug');
-            $table->integer('categorySong_id');
             $table->longText('body');
             $table->longText('note');
-            $table->integer('count_views_song');
-            $table->timestamps();
             $table->string('description');
             $table->longText('tabulature');
             $table->string('image');
             $table->longText('video');
-            $table->integer('performer_id');
             $table->string('media_document');
+            $table->string('who_added');
             $table->integer('heart');
             $table->string('address');
+            $table->integer('count_views_song');
+            $table->timestamps();
         });
     }
 

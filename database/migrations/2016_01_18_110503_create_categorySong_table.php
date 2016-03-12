@@ -18,8 +18,8 @@ class CreateCategorySongTable extends Migration
             $table->string('title');
             $table->string('title_rus');
             $table->string('title_eng');
-            $table->integer('count_views_cat');
             $table->string('image');
+            $table->integer('count_views_cat');
             $table->timestamps();
         });
     }

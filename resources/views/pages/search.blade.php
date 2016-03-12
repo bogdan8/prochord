@@ -9,7 +9,7 @@
                     <li>{{trans('translation.Результат_пошуку')}}</li>
                 </ol>
             </div>
-            <div> @include("song.top_song")</div>
+            <div> @include("song.sort.top_song")</div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">

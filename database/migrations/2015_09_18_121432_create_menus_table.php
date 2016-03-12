@@ -17,10 +17,10 @@ class CreateMenusTable extends Migration
             $table->increments('id');
             $table->boolean('active');
             $table->integer('weight');
-            $table->string('title');
-            $table->string('title_eng');
-            $table->string('title_rus');
             $table->string('url');
+            $table->string('title');
+            $table->string('title_rus');
+            $table->string('title_eng');
             $table->string('position');
             $table->timestamps();
         });

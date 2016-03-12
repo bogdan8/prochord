@@ -19,7 +19,7 @@ class SongController extends MainController
     public function listCategory(CategorySong $categorySong, IndexComment $indexComment, Voting $voting, VotingList $votingList, VotingIp $votingIp, Request $request)
     {
         /**-------------------------------------------------------------
-         * Додавання коментаря до списку категорій
+         * Add a comment to the category list
          * ----------------------------------------------------------------**/
         if ($request->has('body')) {
             $validator = IndexComment::validate(\Input::all());
@@ -42,10 +42,10 @@ class SongController extends MainController
             }
         }
         /**-------------------------------------------------------------
-         * Кінець додавання коментаря до списку категорій
+         * End of adding comments to the list of categories
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Сортування списку категорій
+         * Sort the list of categories
          * ----------------------------------------------------------------**/
         if (isset($_POST['sort'])) {
             $input = \Input::all();
@@ -56,10 +56,10 @@ class SongController extends MainController
             $this->data['category'] = $categorySong->getActive();
         }
         /**-------------------------------------------------------------
-         * Кінець сортування списку категорій
+         * End sort the list of categories
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Голосування
+         * Voting
          * ----------------------------------------------------------------**/
         $this->data['voting'] = $voting->getActive();// Витягую всі назви голосуванн
         $this->data['voting_list'] = $votingList->getActive();// Витягую весь список голосуванн
@@ -97,15 +97,15 @@ class SongController extends MainController
             }
         }
         /**-------------------------------------------------------------
-         * Кінець голосування
+         * End of voting
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Витгую найбільш популярні і найновіші категорії
+         * Extracts the most popular and newest category
          * ----------------------------------------------------------------**/
         $this->data['most_popular'] = $categorySong->most_popular();
         $this->data['last_add'] = $categorySong->last_add();
         /**-------------------------------------------------------------
-         * Кінець
+         * End extracts the most popular and newest category
          * ----------------------------------------------------------------**/
         $this->data['getComments'] = $indexComment->getActive();
         return view('song.listCategory', $this->data);
@@ -114,7 +114,7 @@ class SongController extends MainController
     public function listSongs(Song $song, Request $request)
     {
         /**-------------------------------------------------------------
-         * Сортування списку пісень
+         * Sorting the list of songs
          * ----------------------------------------------------------------**/
         if (isset($_POST['sort'])) {
             $input = \Input::all();
@@ -125,7 +125,7 @@ class SongController extends MainController
             $this->data['listSongs'] = $song->getActiveSongs();
         }
         /**-------------------------------------------------------------
-         * Кінець сортування списку пісень
+         * End of sorting the list of songs
          * ----------------------------------------------------------------**/
         $this->data['most_popular'] = $song->most_popular();
         $this->data['last_add'] = $song->last_add();
@@ -138,7 +138,7 @@ class SongController extends MainController
     public function listSongsSort($item, Song $song, Request $request)
     {
         /**-------------------------------------------------------------
-         * Сортування списку пісень
+         * Sorting the list of songs
          * ----------------------------------------------------------------**/
         if (isset($_POST['sort'])) {
             $input = \Input::all();
@@ -149,7 +149,7 @@ class SongController extends MainController
             $this->data['listSongs'] = $song->sortSongAlphabet($item);
         }
         /**-------------------------------------------------------------
-         * Кінець сортування списку пісень
+         * End of sorting the list of songs
          * ----------------------------------------------------------------**/
         $this->data['most_popular'] = $song->most_popular_sort($item);
         $this->data['last_add'] = $song->last_add_sort($item);
@@ -162,17 +162,17 @@ class SongController extends MainController
     public function songsInCategory($title_eng, Song $song, CategorySong $categorySong, Request $request)
     {
         /**-------------------------------------------------------------
-         * Рахую кількість переглядів категорій і перезаписую в базу данних
+         * Count the number of hits categories and overwrites data in the database
          * ----------------------------------------------------------------**/
         $getCat = $categorySong->getId($title_eng);
         $idCat = $getCat->id;
         \DB::table('categorySong')->WHERE('id', '=', $idCat)->increment('count_views_cat');// рахуємо кулькість переглядів пісні
         $this->data['get'] = $categorySong->getId($title_eng);
         /**-------------------------------------------------------------
-         * Кінець рахую кількість переглядів категорії і перезаписую в базу данних
+         * The end of the count and category views overwrites data in the database
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Сортування списку пісень в категоріях
+         * Sorting the list of songs in categories
          * ----------------------------------------------------------------**/
         if (isset($_POST['sort'])) {
             $input = \Input::all();
@@ -183,15 +183,15 @@ class SongController extends MainController
             $this->data['Song'] = $song->getActive($idCat);
         }
         /**-------------------------------------------------------------
-         * Кінець сортування списку пісень в категоріях
+         * End of sorting the list of songs in categories
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Витгую найбільш популярні і найновіші пісні в категорії
+         * Retrieves the latest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $this->data['most_popular'] = $song->most_popular_songInCategory($idCat);
         $this->data['last_add'] = $song->last_add_songInCategory($idCat);
         /**-------------------------------------------------------------
-         * Кінець
+         * End retrieves the newest and most popular songs in the category
          * ----------------------------------------------------------------**/
         if ($request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.SongsInCategory', $this->data)->render());
@@ -203,7 +203,7 @@ class SongController extends MainController
     public function cartSongInCategory($title_eng, $slug, Song $song, CategorySong $categorySong, SongComment $songComment, Performer $performer, Request $request)
     {
         /**-------------------------------------------------------------
-         * Додавання коментаря до пісні
+         * Add a comment to song
          * ----------------------------------------------------------------**/
         if ($request->has('songId')) {
             $validator = SongComment::validate(\Input::all());
@@ -227,11 +227,11 @@ class SongController extends MainController
             }
         }
         /**-------------------------------------------------------------
-         * Кінець додавання коментаря до пісні
+         * End add a comment to song
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-             like song
-        ----------------------------------------------------------------**/
+         * Like song
+         * ----------------------------------------------------------------**/
         if (isset($_POST['Like'])) {
             $song_id = \Input::get('song_id'); // Записуєм id пісні
             $selectHeart = \DB::table('song')->SELECT('heart', 'address')->WHERE('id', '=', $song_id)->first();
@@ -262,27 +262,27 @@ class SongController extends MainController
             }
         }
         /** -------------------------------------------------------------
-        like song
-        ----------------------------------------------------------------**/
+         * End like song
+         * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Рахую кількість переглядів пісні і перезаписую в базу данних
+         * Count the number of times songs and overwrites data in the database
          * ----------------------------------------------------------------**/
         $id_data = $song->oneSong($slug);
         $idSong = $id_data->id;//Ід Пісні
         \DB::table('song')->WHERE('id', '=', $idSong)->increment('count_views_song');// рахуємо кулькість переглядів пісні
         /**-------------------------------------------------------------
-         * Кінець рахую кількість переглядів пісні і перезаписую в базу данних
+         * The end count number of times song and overwrites data in the database
          * ----------------------------------------------------------------**/
         $this->data['get'] = $categorySong->getId($title_eng);
         $this->data['cartSong'] = $song->oneSong($slug);
         /**-------------------------------------------------------------
-         * Витгую найбільш популярні і найновіші пісні в категорії
+         * Retrieves the latest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $idCat = $this->data['get']->id;
         $this->data['most_popular'] = $song->most_popular_songInCategory($idCat);
         $this->data['last_add'] = $song->last_add_songInCategory($idCat);
         /**-------------------------------------------------------------
-         * Кінець
+         * End retrieves the newest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $this->data['songComment'] = $songComment->getActive($idSong);
         $this->data['performer'] = $performer->getActive();
@@ -294,7 +294,7 @@ class SongController extends MainController
     public function cartSongs($slug, Song $song, CategorySong $categorySong, SongComment $songComment, Performer $performer, Request $request)
     {
         /**-------------------------------------------------------------
-         * Додавання коментаря до пісні
+         * Add narration to song
          * ----------------------------------------------------------------**/
         if ($request->has('songId')) {
             $validator = SongComment::validate(\Input::all());
@@ -318,11 +318,11 @@ class SongController extends MainController
             }
         }
         /**-------------------------------------------------------------
-         * Кінець додавання коментаря до пісні
+         * End of adding comments to songs
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-        like song
-        ----------------------------------------------------------------**/
+         * like song
+         * ----------------------------------------------------------------**/
         if (isset($_POST['Like'])) {
             $song_id = \Input::get('song_id'); // Записуєм id пісні
             $selectHeart = \DB::table('song')->SELECT('heart', 'address')->WHERE('id', '=', $song_id)->first();
@@ -353,30 +353,29 @@ class SongController extends MainController
             }
         }
         /** -------------------------------------------------------------
-                like song
-        ----------------------------------------------------------------**/
-        /**-------------------------------------------------------------
-         * Витягую категорію як належить до цієї пісні
+         * End like song
          * ----------------------------------------------------------------**/
+        /**-------------------------------------------------------------
+         * Retrieves category properly that song
+         * ---------------------------------------------------------------**/
         $getSong = $song->oneSong($slug);
         $idSong = $getSong->id;
         \DB::table('song')->WHERE('id', '=', $idSong)->increment('count_views_song');// рахуємо кулькість переглядів пісні
-        /** пісні індифікатор */
+        /** song ID */
         $id = $getSong->category_song_id;
-        /** категорії індифікатор */
+        /** category ID */
         $this->data['get'] = $categorySong->oneCategory($id);
         /**-------------------------------------------------------------
-         * Кінець витягую категорію як належить до цієї пісні
+         * End take out a category that song belongs
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * /**-------------------------------------------------------------
-         * Витгую найбільш популярні і найновіші пісні в категорії
+         * Retrieves the latest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $idCat = $this->data['get']->id;
         $this->data['most_popular'] = $song->most_popular_songInCategory($idCat);
         $this->data['last_add'] = $song->last_add_songInCategory($idCat);
         /**-------------------------------------------------------------
-         * Кінець
+         * End retrieves the newest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $this->data['cartSong'] = $song->oneSong($slug);
         $this->data['songComment'] = $songComment->getActive($idSong);
@@ -390,7 +389,7 @@ class SongController extends MainController
     public function addSong(AddSong $addSong, CategorySong $categorySong, Performer $performer, Request $request)
     {
         /**-------------------------------------------------------------
-         * Додавання коментаря до пісні
+         * Add narration to song
          * ----------------------------------------------------------------**/
         if ($request->has('tabulature')) {
             $validator = AddSong::validate(\Input::all());
@@ -425,7 +424,7 @@ class SongController extends MainController
     public function performers(Performer $performer, Request $request)
     {
         /**-------------------------------------------------------------
-         * Сортування списку виконавців
+         * Sort the list of performers
          * ----------------------------------------------------------------**/
         if (isset($_POST['sort'])) {
             $input = \Input::all();
@@ -436,15 +435,15 @@ class SongController extends MainController
             $this->data['performer'] = $performer->getActivePag();
         }
         /**-------------------------------------------------------------
-         * Кінець сортування списку виконавців
+         * End sort the list of performers
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Витгую найбільш популярні і найновіші виконавці
+         * Retrieves the latest and most popular performers
          * ----------------------------------------------------------------**/
         $this->data['most_popular'] = $performer->most_popular();
         $this->data['last_add'] = $performer->last_add();
         /**-------------------------------------------------------------
-         * Кінець
+         * End retrieves the newest and most popular performers
          * ----------------------------------------------------------------**/
         if ($request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.ListPerformer', $this->data)->render());
@@ -455,20 +454,20 @@ class SongController extends MainController
     public function cartPerformers($title, Song $song, Performer $performer, Request $request)
     {
         /**-------------------------------------------------------------
-         * Рахую кількість переглядів виконавця і перезаписую в базу данних
+         * Count the number of times the artist and overwrites data in the database
          * ----------------------------------------------------------------**/
         $id_data = $performer->onePerformer($title);
         $idPerformer = $id_data->id;//Ід Виконавця
         \DB::table('performer')->WHERE('id', '=', $idPerformer)->increment('count_views_performer');// рахуємо кулькість переглядів пісні
         /**-------------------------------------------------------------
-         * Кінець рахую кількість переглядів виконавця і перезаписую в базу данних
+         * The end count views performer and overwrites data in the database
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
-         * Витягую категорію як належить до цієї пісні
+         * Retrieves category properly that song
          * ----------------------------------------------------------------**/
         $this->data['getSong'] = $song->SongPerformer($idPerformer);
         /**-------------------------------------------------------------
-         * Кінець витягую категорію як належить до цієї пісні
+         * End take out a category that song belongs
          * ----------------------------------------------------------------**/
         $this->data['cartPerformer'] = $performer->onePerformer($title);
         if ($request->ajax()) {

@@ -458,3 +458,8 @@ textarea.form_control {
     margin-bottom: 40px;
 }
 
+.img-comment {
+    width: auto;
+    height: 100%;
+}
+

@@ -10,7 +10,7 @@
                     <li>{{trans('translation.Категорії')}}</li>
                 </ol>
             </div>
-            @include("song.top_cat")
+            @include("song.sort.top_cat")
         </div>
     </div>
     <div class="ajaxPaginateIndex" style="margin-top: 20px;">
@@ -29,6 +29,7 @@
                                         <p class="computer-title">
                                             {{$item->title}}
                                         </p>
+
                                         <p class="phone-title" style="display: none; float: left;">
                                             {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
                                         </p>
@@ -45,6 +46,7 @@
                                         <p class="computer-title">
                                             {{$item->title_rus}}
                                         </p>
+
                                         <p class="phone-title" style="display: none; float: left;">
                                             {!! mb_substr(strip_tags($item->title_rus),0 , 15)!!}...
                                         </p>
@@ -61,6 +63,7 @@
                                         <p class="computer-title">
                                             {{$item->title_eng}}
                                         </p>
+
                                         <p class="phone-title" style="display: none; float: left;">
                                             {!! mb_substr(strip_tags($item->title_eng),0 , 15)!!}...
                                         </p>
@@ -98,12 +101,19 @@
                                 <h3 class="panel-title"><p>{!! $item->name !!}</p></h3>
                             </div>
                             <div class="panel-body">
-                                <strong>{!! trans('translation.Дата') !!} :</strong>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                        <img class="img-comment" src="/image/guitar/guitar-{{rand(1,4)}}.jpg">
+                                    </div>
+                                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                        <strong>{!! trans('translation.Текст') !!} :</strong>
 
-                                <p>{!! $item->date !!}</p>
-                                <strong>{!! trans('translation.Текст') !!} :</strong>
+                                        <p>{!! nl2br($item->body) !!}</p>
+                                        <strong>{!! trans('translation.Дата') !!} :</strong>
 
-                                <p>{!! $item->body !!}</p>
+                                        <p>{!! $item->date !!}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     @endforeach
