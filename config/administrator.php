@@ -59,6 +59,7 @@ return array(
             'Коментарі' => [
                 'indexComment',
                 'songComment',
+                'lessonsComment',
             ],
         ],
         'Фото' => [
@@ -73,6 +74,9 @@ return array(
         'Голосування' => [
             'voting',
             'votingList',
+        ],
+        'Уроки' => [
+            'lessons',
         ],
     ),
 

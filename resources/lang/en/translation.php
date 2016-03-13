@@ -215,11 +215,21 @@ return [
     'живе_в' => 'lives in',
     'Біографія' => 'Biography',
     'біографія' => 'biography',
+    /* performer */
+    /* lessons */
     'Дякуємо' => 'Thanks',
     'дякуємо' => 'thanks',
     'за_добавлену_пісню' => 'for added song',
     "Ваше_ім'я" => 'Your name',
     "ваше_ім'я" => 'your name',
-    /* performer */
+    'Уроки' => 'Lessons',
+    'уроки' => 'lessons',
+    'Урок' => 'Lesson',
+    'урок' => 'lesson',
+    'Наступний_урок' => 'Next lesson',
+    'наступний_урок' => 'next lesson',
+    'Попередній_урок' => 'Previous lesson',
+    'попередній_урок' => 'previous lesson',
+    /* lessons */
 
 ];

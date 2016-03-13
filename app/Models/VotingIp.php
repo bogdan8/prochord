@@ -8,13 +8,11 @@ class VotingIp extends Model
 {
     protected $table = 'votingIp';
 
-    /* connection one tables */
     public function voting()
     {
         return $this->belongsTo('App\Models\Voting');
     }
 
-    /* connection one tables */
     public function getActive()
     {
         return $this->get();

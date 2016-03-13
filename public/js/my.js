@@ -104,6 +104,39 @@ $(document).ready(function () {
         });
     });
     /**------------------------ End ajax form add a song -------------------------- */
+    /**------------------------ Ajax form add lessons comment -------------------------- */
+    $('#formLessons').submit(function (e) {
+        e.preventDefault();
+        var formData = new FormData();
+        formData.append('name', $('#name').val());
+        formData.append('email', $('#email').val());
+        formData.append('lessonsId', $('#lessonsId').val());
+        formData.append('body', $('#body').val());
+        $.ajax({
+            url: '',
+            method: 'post',
+            processData: false,
+            contentType: false,
+            cache: false,
+            dataType: 'json',
+            data: formData,
+            success: function (data) {
+                info.hide().find('ul').empty();
+                if (!data.success) {
+                    $.each(data.errors, function (index, error) {
+                        info.find('ul').append('<li>' + error + '</li>');
+                    });
+                    info.slideDown();
+                } else {
+                    infoSuccess.find('ul').append('<li>' + data.success + '</li>');
+                    infoSuccess.slideDown();
+                }
+            },
+            error: function () {
+            }
+        });
+    });
+    /**------------------------ End ajax form add lessons comment -------------------------- */
     /**------------------------ Button scroll to the top -------------------------- */
     window.onload = function () {
         var scrollUp = document.getElementById('scrollUp');
@@ -150,7 +183,6 @@ $(document).ready(function () {
             success: function (data) {
                 $(".ajaxPaginateIndex").html(data);
                 if ($(window).width() < 500) {
-                    console.log('bob');
                     $(".computer-title").css('display', 'none');
                     $(".phone-title").css('display', 'block');
                     $(".songIconCount").removeClass("songIconCount").addClass("songIconCountRight");

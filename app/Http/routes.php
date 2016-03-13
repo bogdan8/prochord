@@ -39,6 +39,10 @@ Route::group(
         Route::get('performers/{title}', ['as' => 'add', 'uses' => 'SongController@cartPerformers']);
         /** Пошук **/
         Route::get('search', ['as' => 'search', 'uses' => 'IndexController@search']);
+        /** Lessons **/
+        Route::get('lessons', ['as' => 'lessons', 'uses' => 'LessonsController@index']);
+        Route::get('lessons/{id}', ['as' => 'lessons.cart', 'uses' => 'LessonsController@cart']);
+        Route::post('lessons/{id}', ['as' => 'lessons.cart', 'uses' => 'LessonsController@add']);
     });
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
 Route::controllers([

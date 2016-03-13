@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategorySongTable extends Migration
+class CreateLessonsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,15 @@ class CreateCategorySongTable extends Migration
      */
     public function up()
     {
-        Schema::create('categorySong', function (Blueprint $table) {
+        Schema::create('lessons', function (Blueprint $table) {
             $table->increments('id');
-            $table->boolean('active');
             $table->string('title');
             $table->string('title_rus');
             $table->string('title_eng');
-            $table->string('image');
-            $table->integer('count_views_cat');
+            $table->longText('body');
+            $table->longText('body_rus');
+            $table->longText('body_eng');
+            $table->datetime('date');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateCategorySongTable extends Migration
      */
     public function down()
     {
-        Schema::drop('categorySong');
+        Schema::drop('lessons');
     }
 }

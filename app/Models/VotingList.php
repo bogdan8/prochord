@@ -8,12 +8,11 @@ class VotingList extends Model
 {
     protected $table = 'votingList';
 
-    /* connection one tables */
     public function voting()
     {
         return $this->belongsTo('App\Models\Voting');
     }
-    /* connection one tables */
+
     public function getActive()
     {
         return $this->orderBy('count', 'DESC')->published()->get();
@@ -39,4 +38,10 @@ class VotingList extends Model
         return $this->WHERE('voting_id', '=', $voting_id)->sum('count');
     }
 
+    public function upVotingListCount($voting_id_form,$addCount)
+    {
+        return $this->where('id', '=', $voting_id_form)->UPDATE(
+            ['count' => $addCount]
+        );
+    }
 }

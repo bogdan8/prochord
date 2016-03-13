@@ -8,7 +8,6 @@ class Voting extends Model
 {
     protected $table = 'voting';
 
-    /* connection two tables */
     public function voting_list()
     {
         return $this->hasMany('App\Models\VotingList');
@@ -18,8 +17,6 @@ class Voting extends Model
     {
         return $this->hasMany('App\Models\VotingIp');
     }
-
-    /* connection two tables */
 
     public function getActive()
     {

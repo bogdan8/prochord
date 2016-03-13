@@ -471,3 +471,13 @@ textarea.form_control {
     text-align: center;
     font: italic 14pt 'Times New Roman', Times, serif;
 }
+
+/* lessons */
+.index-lessons-btn {
+    background-color: #b15315;
+}
+.index-lessons-btn hover{
+    background-color: black;
+}
+
+/* end lessons */

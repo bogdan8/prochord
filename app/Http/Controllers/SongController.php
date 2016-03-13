@@ -61,33 +61,31 @@ class SongController extends MainController
         /**-------------------------------------------------------------
          * Voting
          * ----------------------------------------------------------------**/
-        $this->data['voting'] = $voting->getActive();// Витягую всі назви голосуванн
-        $this->data['voting_list'] = $votingList->getActive();// Витягую весь список голосуванн
-        $this->data['votingIp'] = $votingIp->getActive();// Витягую весь список голосуванн
+        $this->data['voting'] = $voting->getActive();
+        $this->data['voting_list'] = $votingList->getActive();
+        $this->data['votingIp'] = $votingIp->getActive();
         if ($request->has('voting_id')) {
-            $browser_name = $_SERVER ['HTTP_USER_AGENT'];// Записую в зміну назву браузера для проведення статистики
-            $voting_id_form = \Input::get('voting_value');// Записую значення з форми
-            $getVotingId = $votingList->getVotingIpCheck($voting_id_form);//Витягую ід де воно дорівнює значення з форми
-            $voting_id = $getVotingId->voting_id;//записую ід в зміну
+            $browser_name = $_SERVER ['HTTP_USER_AGENT'];// Writes to change the name of the browser for statistics
+            $voting_id_form = \Input::get('voting_value');// Writing values from form
+            $getVotingId = $votingList->getVotingIpCheck($voting_id_form);//Retrieves the ID where it is mentioned on the form
+            $voting_id = $getVotingId->voting_id;//Id record in change
             $people_ip = $_SERVER ['REMOTE_ADDR'];
-            $getAddress = $votingIp->getActiveCheck($voting_id, $people_ip);// Витягую всі ip адреси та індифікатори голосування для перевірки
+            $getAddress = $votingIp->getActiveCheck($voting_id, $people_ip);// Extracts all the ip addresses and indicators vote for testing
             if ($getAddress) {
                 return \Response::json([
                     'success' => false,
                     'errors' => trans('translation.З_вашої_ip_уже_голосували')
                 ]);
             } else {
-                $votingIp->insertTable($voting_id, $people_ip, $browser_name);// передаю значення для запису таблиць
-                $getVoting = $votingList->getVoting($voting_id_form);// передаю значення з форми в модель
+                $votingIp->insertTable($voting_id, $people_ip, $browser_name);// transfer values to record tables
+                $getVoting = $votingList->getVoting($voting_id_form);// transfer value from the model form
                 $addCount = $getVoting->count + 1;
-                \DB::table('votingList')->WHERE('id', '=', $voting_id_form)->UPDATE(
-                    ['count' => $addCount]
-                );// перезаписую дані з додаванням 1
+                $votingList->upVotingListCount($voting_id_form,$addCount);
                 /** --------------------------------------------------------------
                  *  Calculates the percentage of the vote
                  * -----------------------------------------------------------------*/
-                $sumVotingList = $votingList->sumVotingList($voting_id);// витягуємо суму чисел з певним ід
-                $voting->upSumVotingList($voting_id, $sumVotingList);//оновлюємо поле з сумою
+                $sumVotingList = $votingList->sumVotingList($voting_id);// take out a certain sum of Eid
+                $voting->upSumVotingList($voting_id, $sumVotingList);//update the field with the amount
                 /** --------------------------------------------------------------
                  *  Calculates the percentage of the vote
                  * -----------------------------------------------------------------*/
@@ -166,7 +164,7 @@ class SongController extends MainController
          * ----------------------------------------------------------------**/
         $getCat = $categorySong->getId($title_eng);
         $idCat = $getCat->id;
-        \DB::table('categorySong')->WHERE('id', '=', $idCat)->increment('count_views_cat');// рахуємо кулькість переглядів пісні
+        $categorySong->views_increment($idCat);// count the number of hits songs
         $this->data['get'] = $categorySong->getId($title_eng);
         /**-------------------------------------------------------------
          * The end of the count and category views overwrites data in the database
@@ -233,31 +231,27 @@ class SongController extends MainController
          * Like song
          * ----------------------------------------------------------------**/
         if (isset($_POST['Like'])) {
-            $song_id = \Input::get('song_id'); // Записуєм id пісні
-            $selectHeart = \DB::table('song')->SELECT('heart', 'address')->WHERE('id', '=', $song_id)->first();
+            $song_id = \Input::get('song_id'); // Id writes songs
+            $selectHeart = $song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart + 1;
-            $selectAddress = $selectHeart->address; // Записуєм в зміну ip яка знаходиться в базі даних
-            $userAddress = $_SERVER ['REMOTE_ADDR']; // Записуєм ip користувача
-            if ($selectAddress == $userAddress) { // Перевіряєм ip адресу щоб немож було голосувати 2 рази
+            $selectAddress = $selectHeart->address; //Writes to change ip that is in the database
+            $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
+            if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                \DB::table('song')->WHERE('id', '=', $song_id)->UPDATE(
-                    ['heart' => $increaseNumber, 'address' => $userAddress]
-                );
+                $song->addOneHeart($song_id,$increaseNumber,$userAddress);
                 $this->data['Like'] = trans('translation.Вам_сподобалось');
             }
         } elseif (isset($_POST['UnLike'])) {
-            $song_id = \Input::get('song_id'); // Записуєм id пісні
-            $selectHeart = \DB::table('song')->SELECT('heart', 'address')->WHERE('id', '=', $song_id)->first();
+            $song_id = \Input::get('song_id');
+            $selectHeart = $song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart - 1;
-            $selectAddress = $selectHeart->address; // Записуєм в зміну ip яка знаходиться в базі даних
-            $userAddress = $_SERVER ['REMOTE_ADDR']; // Записуєм ip користувача
-            if ($selectAddress == $userAddress) { // Перевіряєм ip адресу щоб немож було голосувати 2 рази
+            $selectAddress = $selectHeart->address;
+            $userAddress = $_SERVER ['REMOTE_ADDR'];
+            if ($selectAddress == $userAddress) {
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                \DB::table('song')->WHERE('id', '=', $song_id)->UPDATE(
-                    ['heart' => $increaseNumber, 'address' => $userAddress]
-                );
+                $song->addOneHeart($song_id,$increaseNumber,$userAddress);
                 $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
             }
         }
@@ -269,7 +263,7 @@ class SongController extends MainController
          * ----------------------------------------------------------------**/
         $id_data = $song->oneSong($slug);
         $idSong = $id_data->id;//Ід Пісні
-        \DB::table('song')->WHERE('id', '=', $idSong)->increment('count_views_song');// рахуємо кулькість переглядів пісні
+        $song->incrementViewsSong($idSong);
         /**-------------------------------------------------------------
          * The end count number of times song and overwrites data in the database
          * ----------------------------------------------------------------**/
@@ -324,31 +318,27 @@ class SongController extends MainController
          * like song
          * ----------------------------------------------------------------**/
         if (isset($_POST['Like'])) {
-            $song_id = \Input::get('song_id'); // Записуєм id пісні
-            $selectHeart = \DB::table('song')->SELECT('heart', 'address')->WHERE('id', '=', $song_id)->first();
+            $song_id = \Input::get('song_id'); // Id writes songs
+            $selectHeart = $song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart + 1;
-            $selectAddress = $selectHeart->address; // Записуєм в зміну ip яка знаходиться в базі даних
-            $userAddress = $_SERVER ['REMOTE_ADDR']; // Записуєм ip користувача
-            if ($selectAddress == $userAddress) { // Перевіряєм ip адресу щоб немож було голосувати 2 рази
+            $selectAddress = $selectHeart->address; // Writes to change ip that is in the database
+            $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
+            if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                \DB::table('song')->WHERE('id', '=', $song_id)->UPDATE(
-                    ['heart' => $increaseNumber, 'address' => $userAddress]
-                );
+                $song->addOneHeart($song_id,$increaseNumber,$userAddress);
                 $this->data['Like'] = trans('translation.Вам_сподобалось');
             }
         } elseif (isset($_POST['UnLike'])) {
-            $song_id = \Input::get('song_id'); // Записуєм id пісні
-            $selectHeart = \DB::table('song')->SELECT('heart', 'address')->WHERE('id', '=', $song_id)->first();
+            $song_id = \Input::get('song_id');
+            $selectHeart = $song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart - 1;
-            $selectAddress = $selectHeart->address; // Записуєм в зміну ip яка знаходиться в базі даних
-            $userAddress = $_SERVER ['REMOTE_ADDR']; // Записуєм ip користувача
-            if ($selectAddress == $userAddress) { // Перевіряєм ip адресу щоб немож було голосувати 2 рази
+            $selectAddress = $selectHeart->address;
+            $userAddress = $_SERVER ['REMOTE_ADDR'];
+            if ($selectAddress == $userAddress) {
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                \DB::table('song')->WHERE('id', '=', $song_id)->UPDATE(
-                    ['heart' => $increaseNumber, 'address' => $userAddress]
-                );
+                $song->addOneHeart($song_id,$increaseNumber,$userAddress);
                 $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
             }
         }
@@ -360,7 +350,7 @@ class SongController extends MainController
          * ---------------------------------------------------------------**/
         $getSong = $song->oneSong($slug);
         $idSong = $getSong->id;
-        \DB::table('song')->WHERE('id', '=', $idSong)->increment('count_views_song');// рахуємо кулькість переглядів пісні
+        $song->incrementViewsSong($idSong);// count the number of hits songs
         /** song ID */
         $id = $getSong->category_song_id;
         /** category ID */
@@ -458,8 +448,8 @@ class SongController extends MainController
          * Count the number of times the artist and overwrites data in the database
          * ----------------------------------------------------------------**/
         $id_data = $performer->onePerformer($title);
-        $idPerformer = $id_data->id;//Ід Виконавця
-        \DB::table('performer')->WHERE('id', '=', $idPerformer)->increment('count_views_performer');// рахуємо кулькість переглядів пісні
+        $idPerformer = $id_data->id;//id performers
+        $performer->increment_views_performer($idPerformer);// count the number of hits songs
         /**-------------------------------------------------------------
          * The end count views performer and overwrites data in the database
          * ----------------------------------------------------------------**/
