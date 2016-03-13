@@ -26,9 +26,8 @@
                             <strong>{!! trans('translation.Текст') !!} :</strong>
 
                             <p>{!! nl2br($item->body) !!}</p>
-                            <strong>{!! trans('translation.Дата') !!} :</strong>
 
-                            <p>{!! $item->created_at !!}</p>
+                            <p><i class="fa fa-clock-o"></i> {!! $item->created_at !!}</p>
                         </div>
                     </div>
                 </div>

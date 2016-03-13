@@ -28,9 +28,8 @@
                                 <strong>{!! trans('translation.Текст') !!} :</strong>
 
                                 <p>{!! nl2br($item->body) !!}</p>
-                                <strong>{!! trans('translation.Дата') !!} :</strong>
 
-                                <p>{!! $item->date !!}</p>
+                                <p><i class="fa fa-clock-o"></i> {!! $item->date !!}</p>
                             </div>
                         </div>
                     </div>
