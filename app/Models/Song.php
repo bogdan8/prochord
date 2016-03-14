@@ -73,9 +73,20 @@ class Song extends Model
     /**-------------------------------------------------------------
      * Transmits data to sort songs and sort the list by letter
      * ----------------------------------------------------------------**/
-    public function sortSongAlphabet($item)
+    public function songAlphabet($item)
     {
         return $this->published()->where('title', 'like', $item . '%')->paginate(30);
+
+    }
+    /**-------------------------------------------------------------
+     * End
+     * ----------------------------------------------------------------**/
+    /**-------------------------------------------------------------
+     * Transmits data to sort songs and sort the list by letter
+     * ----------------------------------------------------------------**/
+    public function sortSongAlphabet($item, $sort, $sortBy)
+    {
+        return $this->published()->where('title', 'like', $item . '%')->orderBy($sort, $sortBy)->paginate(30);
 
     }
     /**-------------------------------------------------------------

@@ -217,7 +217,9 @@
 
                     </div>
                     <!-- End script to share the song in social networks-->
-                    <h3 class="who-added-song">{{trans('translation.Дякуємо').' `'.$cartSong->who_added.'`'}} {{trans('translation.за_добавлену_пісню')}}</h3>
+                    @if($cartSong->who_added != 'admin')
+                        <h3 class="who-added-song">{{trans('translation.Дякуємо').' `'.$cartSong->who_added.'`'}} {{trans('translation.за_добавлену_пісню')}}</h3>
+                    @endif
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -275,6 +277,6 @@
         </div>
         <!-- comments -->
         @include('song.comments.song')
-        <!-- end comments -->
+                <!-- end comments -->
     </div>
 @stop

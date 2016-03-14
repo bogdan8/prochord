@@ -20,7 +20,7 @@ Route::group(
         /** Список Пісень відсортованих **/
         Route::get('song_sort', ['as' => 'songs', 'uses' => 'SongController@listSongs']);
         Route::get('song_sort/{item}', ['as' => 'songs', 'uses' => 'SongController@listSongsSort']);
-        Route::post('song_sort', ['as' => 'songs', 'uses' => 'SongController@listSongsSort']);
+        Route::post('song_sort/{item}', ['as' => 'songs', 'uses' => 'SongController@listSongsSort']);
         /** Пісня **/
         Route::get('songs/{slug}', ['as' => 'songs.cart', 'uses' => 'SongController@cartSongs']);
         Route::post('songs/{slug}', ['as' => 'songs.cart', 'uses' => 'SongController@cartSongs']);
@@ -34,9 +34,9 @@ Route::group(
         Route::get('add', ['as' => 'add', 'uses' => 'SongController@addSong']);
         Route::post('add', ['as' => 'add', 'uses' => 'SongController@addSong']);
         /** Виконавці **/
-        Route::get('performers', ['as' => 'add', 'uses' => 'SongController@performers']);
-        Route::post('performers', ['as' => 'add', 'uses' => 'SongController@performers']);
-        Route::get('performers/{title}', ['as' => 'add', 'uses' => 'SongController@cartPerformers']);
+        Route::get('performers', ['as' => 'add', 'uses' => 'PerformerController@performers']);
+        Route::post('performers', ['as' => 'add', 'uses' => 'PerformerController@performers']);
+        Route::get('performers/{title}', ['as' => 'add', 'uses' => 'PerformerController@cartPerformers']);
         /** Пошук **/
         Route::get('search', ['as' => 'search', 'uses' => 'IndexController@search']);
         /** Lessons **/

@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
+    <title>{!! trans('translation.Сортувати').' '.$letter !!}</title>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">

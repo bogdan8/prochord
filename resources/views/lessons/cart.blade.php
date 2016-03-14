@@ -65,6 +65,7 @@
                                 @elseif($url_lang === 'en')
                                     {!! $lessons_cart->body_eng !!}
                                 @endif
+                                <p><i class="fa fa-clock-o"></i> {!! $lessons_cart->date !!}</p>
                             </div>
                             @if($lessons_cart->id != 1)
                                 <div class="row">
