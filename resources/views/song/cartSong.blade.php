@@ -154,7 +154,7 @@
                                     <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
                                     </div>
                                     <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" id="song-body-fonts">
-                                        <p>{!! strtr($cartSong->body,"_"," ")!!}</p>
+                                        <p>{!! strtr($cartSong->body, "_", " ") !!}</p>
                                     </div>
                                 </div>
                             </div>
@@ -242,6 +242,9 @@
                                 @if(!empty($item->video))
                                     <i class="fa fa-youtube-play"></i>
                                 @endif
+                                @if(!empty($item->media_document))
+                                    <i class="fa fa-file"></i>
+                                @endif
                             </span>
                             </a>
                         @endforeach
@@ -267,6 +270,9 @@
                                 {!! count($item->songComment) !!}
                                 @if(!empty($item->video))
                                     <i class="fa fa-youtube-play"></i>
+                                @endif
+                                @if(!empty($item->media_document))
+                                    <i class="fa fa-file"></i>
                                 @endif
                             </span>
                             </a>

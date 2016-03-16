@@ -40,6 +40,9 @@
                                         @if(!empty($item->video))
                                             <i class="fa fa-youtube-play"></i>
                                         @endif
+                                        @if(!empty($item->media_document))
+                                            <i class="fa fa-file"></i>
+                                        @endif
                                     </span>
                                 </a>
                             @endforeach

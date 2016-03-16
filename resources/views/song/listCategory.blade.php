@@ -33,12 +33,12 @@
                                         <p class="phone-title" style="display: none; float: left;">
                                             {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
                                         </p>
-                                            <span class="songIconCount">
-                                                <i class="fa fa-eye"></i>
-                                                {{$item->count_views_cat}}
-                                                <i class="fa fa-music"></i>
-                                                {!! count($item->song) !!}
-                                            </span>
+                                        <span class="songIconCount">
+                                            <i class="fa fa-eye"></i>
+                                            {{$item->count_views_cat}}
+                                            <i class="fa fa-music"></i>
+                                            {!! count($item->song) !!}
+                                        </span>
                                     </a>
                                 @elseif($url_lang === 'ru')
                                     <a class="btn btn-primary my_btn"
@@ -50,11 +50,11 @@
                                         <p class="phone-title" style="display: none; float: left;">
                                             {!! mb_substr(strip_tags($item->title_rus),0 , 15)!!}...
                                         </p>
-                                            <span class="songIconCount">
-                                                <i class="fa fa-eye"></i>
-                                                {{$item->count_views_cat}}
-                                                <i class="fa fa-music"></i>
-                                                {!! count($item->song) !!}
+                                        <span class="songIconCount">
+                                            <i class="fa fa-eye"></i>
+                                            {{$item->count_views_cat}}
+                                            <i class="fa fa-music"></i>
+                                            {!! count($item->song) !!}
                                         </span>
                                     </a>
                                 @elseif($url_lang === 'en')
@@ -67,12 +67,12 @@
                                         <p class="phone-title" style="display: none; float: left;">
                                             {!! mb_substr(strip_tags($item->title_eng),0 , 15)!!}...
                                         </p>
-                                            <span class="songIconCount">
-                                                <i class="fa fa-eye"></i>
-                                                {{$item->count_views_cat}}
-                                                <i class="fa fa-music"></i>
-                                                {!! count($item->song) !!}
-                                            </span>
+                                        <span class="songIconCount">
+                                            <i class="fa fa-eye"></i>
+                                            {{$item->count_views_cat}}
+                                            <i class="fa fa-music"></i>
+                                            {!! count($item->song) !!}
+                                        </span>
                                     </a>
                                 @endif
                             @endforeach

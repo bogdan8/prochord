@@ -1,7 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
-    <title>{!! trans('translation.Сортувати').' '.$letter !!}</title>
+    @if(isset($letter))
+        <title>{!! trans('translation.Сортувати').' '.$letter !!}</title>
+    @endif
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
@@ -40,6 +42,9 @@
                                         @if(!empty($item->video))
                                             <i class="fa fa-youtube-play"></i>
                                         @endif
+                                        @if(!empty($item->media_document))
+                                            <i class="fa fa-file"></i>
+                                        @endif
                                     </span>
                                 </a>
                             @endforeach
@@ -71,6 +76,9 @@
                                 @if(!empty($item->video))
                                     <i class="fa fa-youtube-play"></i>
                                 @endif
+                                @if(!empty($item->media_document))
+                                    <i class="fa fa-file"></i>
+                                @endif
                             </span>
                             </a>
                         @endforeach
@@ -96,6 +104,9 @@
                                 {!! count($item->songComment) !!}
                                 @if(!empty($item->video))
                                     <i class="fa fa-youtube-play"></i>
+                                @endif
+                                @if(!empty($item->media_document))
+                                    <i class="fa fa-file"></i>
                                 @endif
                             </span>
                             </a>

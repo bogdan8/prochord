@@ -372,7 +372,6 @@ class SongController extends MainController
         $this->data['songComment'] = $songComment->getActive($idSong);
         $this->data['performer'] = $performer->getActive();
 
-
         return view('song.cartSong', $this->data);
 
     }
