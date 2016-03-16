@@ -19,6 +19,9 @@ return [
         'body'=>[
             'title'=>'Текст',
         ],
+        'date'=>[
+            'title'=>'Дата',
+        ],
     ],
     'edit_fields' => [
         'song' => [

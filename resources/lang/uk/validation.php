@@ -105,7 +105,7 @@ return [
 
     'attributes' => [
         'body' => 'текс',
-        'name' => "і'мя",
+        'name' => "ім'я",
         'g-recaptcha-response' => 'я не робот',
         'description' => 'виконавець',
         'tabulature' => 'як грати',

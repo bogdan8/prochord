@@ -42,6 +42,7 @@
                             {!! Form::label(trans('translation.Музика_та_слова').' *:') !!}
                             {!! Form::text('description',null,['id'=>'description','placeholder'=>trans('translation.Музика_та_слова').' :','required','class'=>'form-control'],Input::old('description')) !!}
                             <br/>
+                            <p style="color: orangered;">{{trans('translation.Якщо_ви_ненайшли_виконавця_виберіть_інше')}}</p>
                             {!! Form::label(trans('translation.Виберіть_виконавця').' *:') !!}
                             <div class="btn-group bootstrap-select" style="margin-top: 0px;">
                                 <select name="performer" id="performer" class="form-control">
@@ -54,6 +55,7 @@
                             <br/>
                             {!! Form::textarea('active',0,['id'=>'active' , 'style'=>'display:none']) !!}
                             <br/>
+                            <p style="color: orangered;">{{trans('translation.Якщо_ви_ненайшли_категорію_виберіть_інше')}}</p>
                             {!! Form::label(trans('translation.Виберіть_категорію').' *:') !!}
                             <div class="btn-group bootstrap-select" style="margin-top: 0px;">
                                 <select name="category" id="category" class="form-control">

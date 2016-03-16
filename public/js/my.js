@@ -165,6 +165,7 @@ $(document).ready(function () {
         $(".computer-title").css('display', 'none');
         $(".phone-title").css('display', 'block');
         $(".songIconCount").removeClass("songIconCount").addClass("songIconCountRight");
+        $(".img-comment").css('display', 'none');
     }
     if ($(window).width() > 1300) {
         $(".alphabet-block").css('display', 'block');
