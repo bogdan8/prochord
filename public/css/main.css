@@ -319,10 +319,6 @@ a:hover {
 /*--------------------------------------------------------------------------
        Footer Style
 --------------------------------------------------------------------------*/
-#count-views-site {
-    float: right;
-}
-
 .footer {
     background: #222;
     padding: 0 20px 10px 20px;
@@ -459,8 +455,9 @@ textarea.form_control {
 }
 
 .img-comment {
-    width: 60%;
+    width: 40%;
     height: 150px;
+    margin-left: 20%;
 }
 
 .who-added-song {
@@ -476,8 +473,19 @@ textarea.form_control {
 .index-lessons-btn {
     background-color: #b15315;
 }
-.index-lessons-btn hover{
+
+.index-lessons-btn hover {
     background-color: black;
 }
 
 /* end lessons */
+
+/* feedback */
+.font-image{
+    font-size: 80px;
+    margin-left: 20%;
+}
+.feedback-panel-header{
+    border-radius: 10px 10px 0px 0px;
+}
+/* end feedback */

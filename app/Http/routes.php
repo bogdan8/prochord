@@ -5,44 +5,45 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect']
     ],
     function () {
-        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-
         Route::get('/', ['as' => 'index', 'uses' => 'SongController@listCategory']);
         Route::post('/', ['as' => 'index', 'uses' => 'SongController@listCategory']);
-        /** Список Категорій **/
+        /** List category **/
         Route::get('categories', ['as' => 'categories', 'uses' => 'SongController@listCategory']);
         Route::post('categories', ['as' => 'categories', 'uses' => 'SongController@listCategory']);
-        /** Список Акордів **/
+        /** List chords **/
         Route::get('chords', ['as' => 'chords', 'uses' => 'IndexController@chords']);
-        /** Список Пісень **/
+        /** List songs **/
         Route::get('songs', ['as' => 'songs', 'uses' => 'SongController@listSongs']);
         Route::post('songs', ['as' => 'songs', 'uses' => 'SongController@listSongs']);
-        /** Список Пісень відсортованих **/
+        /** List song sort **/
         Route::get('song_sort', ['as' => 'songs', 'uses' => 'SongController@listSongs']);
         Route::get('song_sort/{item}', ['as' => 'songs', 'uses' => 'SongController@listSongsSort']);
         Route::post('song_sort/{item}', ['as' => 'songs', 'uses' => 'SongController@listSongsSort']);
-        /** Пісня **/
+        /** songs **/
         Route::get('songs/{slug}', ['as' => 'songs.cart', 'uses' => 'SongController@cartSongs']);
         Route::post('songs/{slug}', ['as' => 'songs.cart', 'uses' => 'SongController@cartSongs']);
-        /** Список пісень в категорії **/
+        /** List song in category **/
         Route::get('song/{title_eng}', ['as' => 'song.record', 'uses' => 'SongController@songsInCategory']);
         Route::post('song/{title_eng}', ['as' => 'song.record', 'uses' => 'SongController@songsInCategory']);
-        /** Пісня в категорії **/
+        /** Song in category **/
         Route::get('song/{title_eng}/{slug}', ['as' => 'song.record', 'uses' => 'SongController@cartSongInCategory']);
         Route::post('song/{title_eng}/{slug}', ['as' => 'song.record', 'uses' => 'SongController@cartSongInCategory']);
-        /** Додати пісню **/
+        /** add song **/
         Route::get('add', ['as' => 'add', 'uses' => 'SongController@addSong']);
         Route::post('add', ['as' => 'add', 'uses' => 'SongController@addSong']);
-        /** Виконавці **/
+        /** Performers **/
         Route::get('performers', ['as' => 'add', 'uses' => 'PerformerController@performers']);
         Route::post('performers', ['as' => 'add', 'uses' => 'PerformerController@performers']);
         Route::get('performers/{title}', ['as' => 'add', 'uses' => 'PerformerController@cartPerformers']);
-        /** Пошук **/
+        /** Search **/
         Route::get('search', ['as' => 'search', 'uses' => 'IndexController@search']);
         /** Lessons **/
         Route::get('lessons', ['as' => 'lessons', 'uses' => 'LessonsController@index']);
         Route::get('lessons/{id}', ['as' => 'lessons.cart', 'uses' => 'LessonsController@cart']);
         Route::post('lessons/{id}', ['as' => 'lessons.cart', 'uses' => 'LessonsController@add']);
+        /** Feedback **/
+        Route::get('feedback', ['as' => 'feedback', 'uses' => 'IndexController@feedback']);
+        Route::post('feedback', ['as' => 'feedback', 'uses' => 'IndexController@feedback']);
     });
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
 Route::controllers([

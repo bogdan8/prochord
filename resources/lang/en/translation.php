@@ -67,6 +67,18 @@ return [
     'емейл' => 'email',
     'Ми_в' => 'We are',
     'ми_в' => 'we are',
+    'Статистика' => 'Statistics',
+    'статистика' => 'statistics',
+    'Кількість_пісень' => 'Number of songs',
+    'кількість_пісень' => 'number of songs',
+    'Кількість_виконавців' => 'The number of participants',
+    'кількість_виконавців' => 'the number of participants',
+    'Кількість_уроків' => 'Number of lessons',
+    'кількість_уроків' => 'number of lessons',
+    'Звязок_з_нами' => "Contact Us",
+    'звязок_з_нами' => "contact Us",
+    'Звязатися' => "Contact",
+    'звязатися' => "contact",
     /* footer */
     /* project */
     'Проекти' => 'Projects',
@@ -235,5 +247,16 @@ return [
     'Попередній_урок' => 'Previous lesson',
     'попередній_урок' => 'previous lesson',
     /* lessons */
-
+    /* feedback */
+    'Дякуємо_ми_розглянем_ваш_запит_в_якнайшвидше' => 'Thank you, we will review your request as quickly as possible',
+    'дякуємо_ми_розглянем_ваш_запит_в_якнайшвидше' => 'tThank you, we will review your request as quickly as possible',
+    'Тут_ви_можете_написати_нам' => 'You can write to us',
+    'тут_ви_можете_написати_нам' => 'you can write to us',
+    'Написати_нам' => 'Write us',
+    'написати_нам' => 'write us',
+    'Написати' => 'Write',
+    'написати' => 'write',
+    'Ви_ввели_невірне_імя' => "You entered the wrong name",
+    'ви_ввели_невірне_імя' => "you entered the wrong name",
+    /* feedback */
 ];

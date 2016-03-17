@@ -179,7 +179,7 @@ class SongController extends MainController
             $sortBy = $input['sortBy'];
             $this->data['Song'] = $song->sortSongInCategory($idCat, $sort, $sortBy);
         } else {
-            $this->data['Song'] = $song->getActive($idCat);
+            $this->data['Song'] = $song->getActivePag($idCat);
         }
         /**-------------------------------------------------------------
          * End of sorting the list of songs in categories

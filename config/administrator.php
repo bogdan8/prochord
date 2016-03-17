@@ -56,6 +56,7 @@ return array(
             'menus',
             'users',
             'alphabet',
+            'feedback',
             'Коментарі' => [
                 'indexComment',
                 'songComment',

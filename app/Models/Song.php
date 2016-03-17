@@ -29,6 +29,16 @@ class Song extends Model
      * End
      * ----------------------------------------------------------------**/
     /**-------------------------------------------------------------
+     * Extracts all songs
+     * ----------------------------------------------------------------**/
+    public function getActive()
+    {
+        return $this->published()->get();
+    }
+    /**-------------------------------------------------------------
+     * End
+     * ----------------------------------------------------------------**/
+    /**-------------------------------------------------------------
      * Extracts all songs 30
      * ----------------------------------------------------------------**/
     public function getActiveSongs()
@@ -41,7 +51,7 @@ class Song extends Model
     /**-------------------------------------------------------------
      * Retrieves song as belonging to a particular category
      * ----------------------------------------------------------------**/
-    public function getActive($idCat)
+    public function getActivePag($idCat)
     {
         return $this->where(['active' => '1', 'category_song_id' => $idCat])->paginate(30);
     }
