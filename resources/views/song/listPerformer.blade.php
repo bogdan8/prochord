@@ -23,7 +23,7 @@
                         <div class="ajaxPaginateIndex">
                             @foreach($performer as $item)
                                 <a class="btn btn-primary my_btn"
-                                   href="/performers/{{$item->title}}">
+                                   href="/performers/{{$item->slug}}">
                                     <p class="computer-title">
                                         {{$item->title}}
                                     </p>
@@ -54,7 +54,7 @@
                     <div class="panel-body">
                         @foreach($most_popular as $item)
                             <a class="btn btn-primary my_btn"
-                               href="/performers/{{$item->title}}">
+                               href="/performers/{{$item->slug}}">
                                 <p style="float: left;">
                                     {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
                                 </p>
@@ -78,7 +78,7 @@
                     <div class="panel-body">
                         @foreach($last_add as $item)
                             <a class="btn btn-primary my_btn"
-                               href="/performers/{{$item->title}}">
+                               href="/performers/{{$item->slug}}">
                                 <p style="float: left;">
                                     {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
                                 </p>

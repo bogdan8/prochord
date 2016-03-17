@@ -16,11 +16,14 @@ class CreatePerformerTable extends Migration
             $table->increments('id');
             $table->boolean('active');
             $table->string('title');
+            $table->string('title');
             $table->date('birth');
             $table->string('country');
             $table->string('place');
             $table->string('image');
-            $table->longText('image');
+            $table->longText('description');
+            $table->longText('description_rus');
+            $table->longText('description_eng');
             $table->integer('count_views_performer');
             $table->timestamps();
         });

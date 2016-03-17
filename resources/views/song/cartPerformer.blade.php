@@ -100,7 +100,13 @@
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h4 style="text-align: center;">{{trans('translation.Біографія')}}:</h4>
-                                {!! $cartPerformer->description !!}
+                                @if($url_lang == 'uk')
+                                    {!! $cartPerformer->description !!}
+                                @elseif($url_lang == 'ru')
+                                    {!! $cartPerformer->description_rus !!}
+                                @elseif($url_lang == 'en')
+                                    {!! $cartPerformer->description_eng !!}
+                                @endif
                             </div>
                         </div>
                     </div>

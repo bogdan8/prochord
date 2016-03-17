@@ -21,7 +21,7 @@
                         @foreach($performer as $item)
                             @if($item->id === $cartSong->performer_id)
                                 <li>
-                                    <a href="/performers/{{$item->title}}">
+                                    <a href="/performers/{{$item->slug}}">
                                         {!! $item->title!!}
                                     </a>
                                 </li>
@@ -98,7 +98,7 @@
                                                 {{trans('translation.Виконавець')}} :
                                                 @foreach($performer as $item)
                                                     @if($item->id === $cartSong->performer_id)
-                                                        <a href="/performers/{{$item->title}}">
+                                                        <a href="/performers/{{$item->slug}}">
                                                             <p style="float: left;">
                                                                 {!! $item->title!!}
                                                             </p>

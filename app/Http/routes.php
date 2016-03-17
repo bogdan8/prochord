@@ -34,7 +34,7 @@ Route::group(
         /** Performers **/
         Route::get('performers', ['as' => 'add', 'uses' => 'PerformerController@performers']);
         Route::post('performers', ['as' => 'add', 'uses' => 'PerformerController@performers']);
-        Route::get('performers/{title}', ['as' => 'add', 'uses' => 'PerformerController@cartPerformers']);
+        Route::get('performers/{slug}', ['as' => 'add', 'uses' => 'PerformerController@cartPerformers']);
         /** Search **/
         Route::get('search', ['as' => 'search', 'uses' => 'IndexController@search']);
         /** Lessons **/

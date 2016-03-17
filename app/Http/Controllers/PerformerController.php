@@ -39,12 +39,12 @@ class PerformerController extends MainController
         return view('song.listPerformer', $this->data);
     }
 
-    public function cartPerformers($title, Song $song, Performer $performer, Request $request)
+    public function cartPerformers($slug, Song $song, Performer $performer, Request $request)
     {
         /**-------------------------------------------------------------
          * Count the number of times the artist and overwrites data in the database
          * ----------------------------------------------------------------**/
-        $id_data = $performer->onePerformer($title);
+        $id_data = $performer->onePerformer($slug);
         $idPerformer = $id_data->id;//id performers
         $performer->increment_views_performer($idPerformer);// count the number of hits songs
         /**-------------------------------------------------------------
@@ -57,7 +57,7 @@ class PerformerController extends MainController
         /**-------------------------------------------------------------
          * End take out a category that song belongs
          * ----------------------------------------------------------------**/
-        $this->data['cartPerformer'] = $performer->onePerformer($title);
+        $this->data['cartPerformer'] = $performer->onePerformer($slug);
         if ($request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.CartPerformer', $this->data)->render());
         }

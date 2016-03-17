@@ -42,9 +42,9 @@ class Performer extends Model
     /**-------------------------------------------------------------
      * Retrieves one artist by name
      * ----------------------------------------------------------------**/
-    public function onePerformer($title)
+    public function onePerformer($slug)
     {
-        return $this->where(['active' => '1', 'title' => $title])->firstOrFail();
+        return $this->where(['active' => '1', 'slug' => $slug])->firstOrFail();
     }
     /**-------------------------------------------------------------
      * End

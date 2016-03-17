@@ -23,6 +23,10 @@ return [
             'title' => 'Назва',
             'type' => 'text',
         ],
+        'slug' => [
+            'title' => 'Назва для посилання',
+            'type' => 'text',
+        ],
         'birth' => [
             'type' => 'date',
             'title' => 'Дата народження(створення)',
@@ -38,6 +42,14 @@ return [
         ],
         'description' => [
             'title' => 'Опис',
+            'type' => 'wysiwyg',
+        ],
+        'description_rus' => [
+            'title' => 'Опис на російські',
+            'type' => 'wysiwyg',
+        ],
+        'description_eng' => [
+            'title' => 'Опис на англійські',
             'type' => 'wysiwyg',
         ],
         'image' => [
