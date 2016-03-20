@@ -261,4 +261,13 @@ $(document).ready(function () {
         });
     });
     /**------------------------ End Fancybox -------------------------- */
+
+    /**------------------------ End right voting -------------------------- */
+    $(".btn-hide").click(function () {
+        $(".voting").slideUp();
+    });
+    $(".btn-show").click(function () {
+        $(".voting").slideDown();
+    });
+    /**------------------------ End right voting -------------------------- */
 });

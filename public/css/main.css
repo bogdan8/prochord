@@ -481,11 +481,25 @@ textarea.form_control {
 /* end lessons */
 
 /* feedback */
-.font-image{
+.font-image {
     font-size: 80px;
     margin-left: 20%;
 }
-.feedback-panel-header{
+
+.feedback-panel-header {
     border-radius: 10px 10px 0px 0px;
 }
+
 /* end feedback */
+
+/* right voting */
+
+.voting {
+    display: none;
+}
+
+.voting-btn {
+    text-align: center;
+}
+
+/* end right voting */
