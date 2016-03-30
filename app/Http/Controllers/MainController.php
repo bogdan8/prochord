@@ -16,7 +16,7 @@ class MainController extends Controller
     {
         $this->performer = $performer; #Models performer
         $this->song = $song; #Models song
-        $this->lessons = $lessons; #Models performer
+        $this->lessons = $lessons; #Models lessons
         $this->request = $request; #request
 
         $this->data['menu']['left'] = $menuModel->getLeftMenu();
