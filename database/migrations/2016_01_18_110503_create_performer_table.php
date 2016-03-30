@@ -16,7 +16,7 @@ class CreatePerformerTable extends Migration
             $table->increments('id');
             $table->boolean('active');
             $table->string('title');
-            $table->string('title');
+            $table->string('slug');
             $table->date('birth');
             $table->string('country');
             $table->string('place');

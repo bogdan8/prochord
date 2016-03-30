@@ -79,7 +79,7 @@
                             {!! Form::label(trans('translation.Ваш_текст').' *:') !!}
                             {!! Form::textarea('body',null,['id'=>'body','placeholder'=>trans('translation.Ваш_текст').' :','required', 'class'=>'form-control','rows'=>'5'],Input::old('body')) !!}
                             <br/>
-                            {!! Form::submit(trans('translation.Додати'),['class'=>'btn btn-primary']) !!}
+                            {!! Form::submit(trans('translation.Додати'),['class'=>'btn btn-success']) !!}
                             {!! Form::close() !!}
                         </div>
                     </div>

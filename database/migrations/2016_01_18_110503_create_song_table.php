@@ -16,9 +16,9 @@ class CreateSongTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->longText('body');
-            $table->longText('note');
             $table->string('description');
             $table->longText('tabulature');
+            $table->longText('note');
             $table->string('image');
             $table->longText('video');
             $table->string('media_document');

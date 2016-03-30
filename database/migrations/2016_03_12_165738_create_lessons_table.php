@@ -14,6 +14,7 @@ class CreateLessonsTable extends Migration
     {
         Schema::create('lessons', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('number_lesson', 11);
             $table->string('title');
             $table->string('title_rus');
             $table->string('title_eng');
@@ -21,6 +22,7 @@ class CreateLessonsTable extends Migration
             $table->longText('body_rus');
             $table->longText('body_eng');
             $table->datetime('date');
+            $table->integer('viewed_lesson', 11);
             $table->timestamps();
         });
     }

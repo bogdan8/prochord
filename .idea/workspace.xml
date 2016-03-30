@@ -2,98 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48f178-a2a0-4d4b-a0f2-3bf7cc4c9683" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/MultiAuthCollector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colorbutton/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colordialog/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/devtools/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/div/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/docprops/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/embedbase/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/filetools/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/find/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/font/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/iframe/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/image2/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/justify/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/language/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/liststyle/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/mathjax/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/newpage/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/notification/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/pagebreak/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/placeholder/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/preview/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/print/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/save/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/selectall/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/showblocks/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/de-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/package.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/phpunit.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/full/DieHardTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/full/StatTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/specific/capicom.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/specific/dev_urandom.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/specific/libsodium.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/specific/mcrypt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/specific/openssl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/unit/RandomBytesTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/unit/RandomIntTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/tests/unit/UtilityTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/1021.phpt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/1021/Issue1021Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/523.phpt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/523/Issue523Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/578.phpt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/578/Issue578Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/684.phpt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/684/Issue684Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/783.phpt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/783/ChildSuite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/783/OneTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/783/ParentSuite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/783/TwoTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/ApcUniversalClassLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/DebugClassLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/DebugUniversalClassLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Namespaced/Bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Namespaced/Baz.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Namespaced/Foo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Namespaced/FooBar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Pearlike/Bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Pearlike/Baz.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/Pearlike/Foo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/alpha/LegacyApc/LegacyApcPrefixCollision/A/Bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/alpha/LegacyApc/LegacyApcPrefixCollision/A/Foo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/alpha/LegacyApc/NamespaceCollision/A/Bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/alpha/LegacyApc/NamespaceCollision/A/Foo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/beta/LegacyApc/LegacyApcPrefixCollision/A/B/Bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/beta/LegacyApc/LegacyApcPrefixCollision/A/B/Foo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/beta/LegacyApc/NamespaceCollision/A/B/Bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/beta/LegacyApc/NamespaceCollision/A/B/Foo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/fallback/LegacyApc/Pearlike/FooBar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/LegacyApc/fallback/Namespaced/FooBar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/LegacyApcUniversalClassLoaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/LegacyUniversalClassLoaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/UniversalClassLoader.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/Fixtures/directory/.empty" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/Fixtures/directory/.empty" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mcamara/laravel-localization/tests/.gitkeep" afterPath="$PROJECT_DIR$/vendor/mcamara/laravel-localization/tests/.gitkeep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/Fixtures/.gitkeep" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/Fixtures/.gitkeep" />
@@ -149,6 +57,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/cry_smile.gif" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/cry_smile.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/cry_smile.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/cry_smile.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/devil_smile.gif" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/devil_smile.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/skins/kama/images/dialog_sides.gif" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/skins/kama/images/dialog_sides.gif" />
@@ -180,6 +89,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/find/icons/hidpi/find.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/find/icons/hidpi/find.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/icons/flash.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/icons/flash.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/icons/hidpi/flash.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/icons/hidpi/flash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/image/errors/fon_error.jpg" afterPath="$PROJECT_DIR$/public/image/errors/fon_error.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
@@ -191,6 +101,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/icons/hidpi/form.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/icons/hidpi/form.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/fr.res" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/fr.res" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/img/github-top.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/img/github-top.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/image/guitar/guitar-1.jpg" afterPath="$PROJECT_DIR$/public/image/guitar/guitar-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/image/guitar/guitar-2.jpg" afterPath="$PROJECT_DIR$/public/image/guitar/guitar-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/image/guitar/guitar-3.jpg" afterPath="$PROJECT_DIR$/public/image/guitar/guitar-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/image/guitar/guitar-4.jpg" afterPath="$PROJECT_DIR$/public/image/guitar/guitar-4.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/images/handle.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/images/handle.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/img/header-bg.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/img/header-bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/img/header-separator.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/img/header-separator.png" />
@@ -355,8 +269,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/wink_smile.gif" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/wink_smile.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/.editorconfig" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/.editorconfig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/.editorconfig" afterPath="$PROJECT_DIR$/vendor/psy/psysh/.editorconfig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.gitattributes" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/.gitignore" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/.gitignore" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mcamara/laravel-localization/.gitignore" afterPath="$PROJECT_DIR$/vendor/mcamara/laravel-localization/.gitignore" />
@@ -401,6 +317,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/03-utilities.md" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/doc/03-utilities.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/04-extending.md" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/doc/04-extending.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/0_Introduction.markdown" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/0_Introduction.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/1021.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/1021.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1149.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1149.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265.phpt" />
@@ -416,6 +333,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1472.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1472.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1570.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1570.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/migrations/2014_12_01_120000_create_phpdebugbar_storage_table.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/migrations/2014_12_01_120000_create_phpdebugbar_storage_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_categorySong_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_categorySong_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_performer_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_performer_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_song_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_song_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_03_12_165738_create_lessons_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_03_12_165738_create_lessons_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_03_12_180253_create_lessonsComment_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_03_12_180253_create_lessonsComment_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_03_17_140007_create_feedback_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_03_17_140007_create_feedback_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/244.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/244.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/2_Usage_of_basic_components.markdown" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/2_Usage_of_basic_components.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322.phpt" />
@@ -425,9 +348,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/498.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/498.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/4_Code_generation.markdown" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/4_Code_generation.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/503.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/503.phpt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/523.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/523.phpt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/578.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/578.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/581.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/581.phpt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/684.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/684.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/765.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/765.phpt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/863.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/863.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/873-php5.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/873-php5.phpt" />
@@ -515,13 +442,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/AppNamespaceDetectorTrait.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/AppNamespaceDetectorTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Console/Application.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Foundation/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/ApplicationDescription.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Descriptor/ApplicationDescription.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tester/ApplicationTester.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tester/ApplicationTester.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/ApplicationTesterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Tester/ApplicationTesterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/ApplicationTrait.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/ApplicationTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ApproximateValueToken.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ApproximateValueToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ApproximateValueTokenSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ApproximateValueTokenSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Arg.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Arg.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php" />
@@ -626,8 +554,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/Pearlike2/Baz.php" afterPath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/Pearlike2/Baz.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/BeforeAndAfterTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/BeforeAndAfterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/BeforeClassAndAfterClassTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/BeforeClassAndAfterClassTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-util/Binary.php" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/Binary.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" />
@@ -645,7 +571,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BitwiseXor.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BitwiseXor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Blacklist.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Blacklist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/Book.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/Book.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Bool_.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Bool_.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BooleanAnd.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BooleanAnd.php" />
@@ -669,8 +594,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/BufferHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/BufferHandlerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/BufferedOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/BufferedOutput.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderAbstract.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderAbstract.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" />
@@ -682,7 +605,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mcamara/laravel-localization/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/mcamara/laravel-localization/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/class-loader/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/CHANGELOG.md" />
@@ -764,6 +689,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Middleware/CheckResponseForModifications.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Middleware/CheckResponseForModifications.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1351/ChildProcessClass1351.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1351/ChildProcessClass1351.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/ChildSuite.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/ChildSuite.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Field/ChoiceFormField.php" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Field/ChoiceFormField.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Tests/Field/ChoiceFormFieldTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Tests/Field/ChoiceFormFieldTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Question/ChoiceQuestion.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Question/ChoiceQuestion.php" />
@@ -855,7 +781,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/Formatter/CodeFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/Formatter/CodeFormatterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeParsingTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeParsingTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeTestAbstract.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeTestAbstract.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/CombinedSelectorNode.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/CombinedSelectorNode.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/CombinedSelectorNodeTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Node/CombinedSelectorNodeTest.php" />
@@ -902,6 +827,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Question/ConfirmationQuestion.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Question/ConfirmationQuestion.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Exception/ConflictHttpException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Exception/ConflictHttpException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/sebastian/environment/src/Console.php" afterPath="$PROJECT_DIR$/vendor/sebastian/environment/src/Console.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/ConsoleColorFactory.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/ConsoleColorFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/ConsoleColorFactoryTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/ConsoleColorFactoryTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleCommandEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleCommandEvent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Event/ConsoleEvent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/ConsoleEvents.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/ConsoleEvents.php" />
@@ -1068,7 +995,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/Dispatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Events/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Events/Dispatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesCommands.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesCommands.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php" />
@@ -1193,6 +1119,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ExactValueToken.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ExactValueToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ExactValueTokenSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ExactValueTokenSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ExampleTest.php" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Exception.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Exception.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Exception.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Exception.php" />
@@ -1237,6 +1164,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ExecutableFinderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ExecutableFinderTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/ExistenceAwareInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/ExistenceAwareInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Command/ExitCommand.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Command/ExitCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/CodeCleaner/ExitPass.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/CodeCleaner/ExitPass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/CodeCleaner/ExitPassTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/CodeCleaner/ExitPassTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php" />
@@ -1269,7 +1198,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Validation/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Validation/Factory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/View/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/View/Factory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php" />
@@ -1288,6 +1216,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/FatalTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/FatalTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/Exception/FatalThrowableError.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Exception/FatalThrowableError.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Feedback.php" afterPath="$PROJECT_DIR$/app/Models/Feedback.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/FieldFactory.php" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/FieldFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/tests/Cron/FieldFactoryTest.php" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/tests/Cron/FieldFactoryTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/FieldInterface.php" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/FieldInterface.php" />
@@ -1360,6 +1289,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FlowdockFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FlowdockFormatterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FlowdockHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FlowdockHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FluentdFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FluentdFormatterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/FlushFailedCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/FlushFailedCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/Apc/Namespaced/Foo.php" afterPath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/Apc/Namespaced/Foo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/Apc/Pearlike/Foo.php" afterPath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/Apc/Pearlike/Foo.php" />
@@ -1478,7 +1409,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Processor/GitProcessorTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Processor/GitProcessorTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Glob.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Glob.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Expression/Glob.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Expression/Glob.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/GlobTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/GlobTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Expression/GlobTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Expression/GlobTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/GlobalState.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/GlobalState.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/GlobalStateTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/GlobalStateTest.php" />
@@ -1509,9 +1439,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HandlerInterface.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HandlerInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/HandlerInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/HandlerInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/HandlerResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Bus/HandlerResolver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/HandlerWrapperTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/HandlerWrapperTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/HashHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Handler/HashHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/HashHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Tests/Parser/Handler/HashHandlerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/HashNode.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Node/HashNode.php" />
@@ -1651,6 +1582,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/IsolationTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/IsolationTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/1021/Issue1021Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/1021/Issue1021Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1149/Issue1149Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1149/Issue1149Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216/Issue1216Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216/Issue1216Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265/Issue1265Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265/Issue1265Test.php" />
@@ -1671,7 +1603,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/445/Issue445Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/445/Issue445Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/498/Issue498Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/498/Issue498Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/503/Issue503Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/503/Issue503Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/523/Issue523Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/523/Issue523Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/578/Issue578Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/578/Issue578Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/581/Issue581Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/581/Issue581Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/684/Issue684Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/684/Issue684Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74/Issue74Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74/Issue74Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/765/Issue765Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/765/Issue765Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797/Issue797Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797/Issue797Test.php" />
@@ -1777,6 +1712,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Exception/LengthRequiredHttpException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Exception/LengthRequiredHttpException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Lessons.php" afterPath="$PROJECT_DIR$/app/Models/Lessons.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/LessonsComment.php" afterPath="$PROJECT_DIR$/app/Models/LessonsComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LessonsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Lexer.markdown" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Lexer.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Lexer.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Lexer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/LexerTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/LexerTest.php" />
@@ -1901,6 +1839,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/MethodNodeSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/MethodNodeSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Exception/MethodNotAllowedException.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Exception/MethodNotAllowedException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Exception/MethodNotAllowedHttpException.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Exception/MethodNotAllowedHttpException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotExtendableException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotExtendableException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/MethodNotExtendableExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/MethodNotExtendableExceptionSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/MethodNotFoundExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/MethodNotFoundExceptionSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prophecy/MethodProphecy.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prophecy/MethodProphecy.php" />
@@ -1940,7 +1880,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MockSplFileInfo.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MockSplFileInfo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mod.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mod.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Database/ModelIdentifier.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Database/ModelIdentifier.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/src/Console/ModelsCommand.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/src/Console/ModelsCommand.php" />
@@ -1965,12 +1904,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/MountManager.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/MountManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mul.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mul.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/MultiAuthCollector.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/MultiAuthCollector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/MultiDependencyTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/MultiDependencyTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Iterator/MultiplePcreFilterIterator.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Iterator/MultiplePcreFilterIterator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MultiplePcreFilterIteratorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/MultiplePcreFilterIteratorTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/MultipleTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/MultipleTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/MysqlProfilerStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/MysqlProfilerStorage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name.php" />
@@ -2082,6 +2021,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ObjectStateTokenSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ObjectStateTokenSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Object_.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Object_.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/ObjectsProvider.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Descriptor/ObjectsProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/OneTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/OneTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/OneTestCase.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/OneTestCase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/OpenHandler.php" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/OpenHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/OpenHandlerController.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/OpenHandlerController.php" />
@@ -2120,6 +2060,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/ParamTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/ParamTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ParameterBagTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ParameterBagTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/ParentSuite.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/ParentSuite.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Command/ParseCommand.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Command/ParseCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Exception/ParseErrorException.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Exception/ParseErrorException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/Exception/ParseErrorExceptionTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/Exception/ParseErrorExceptionTest.php" />
@@ -2148,6 +2089,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/PdoStorage.php" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/PdoStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PerformerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PerformerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/Php56.php" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/Php56.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/Php5Test.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/Php5Test.php" />
@@ -2156,7 +2098,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Adapter/PhpAdapter.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Adapter/PhpAdapter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/PhpBridgeSessionStorageTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/PhpBridgeSessionStorageTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/PhpExecutableFinder.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/PhpExecutableFinder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/PhpExecutableFinderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/PhpExecutableFinderTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Dumper/PhpFileDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Dumper/PhpFileDumper.php" />
@@ -2197,7 +2138,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Event/PostResponseEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Event/PostResponseEvent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Exception/PostTooLargeException.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Exception/PostTooLargeException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Pow.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Pow.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php" />
@@ -2247,6 +2187,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/PropertyProperty.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/PropertyProperty.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/PropertyTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/PropertyTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/PropertyTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/PropertyTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Comparator/ProphecyComparator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Comparator/ProphecyComparator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Comparator/ProphecyComparatorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Comparator/ProphecyComparatorSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ProphecyException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ProphecyException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecyInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecyInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php" />
@@ -2367,7 +2309,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Registry.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Registry.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/RegistryTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/RegistryTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/Renderable.php" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/Renderable.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Extensions/RepeatedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Extensions/RepeatedTest.php" />
@@ -2434,7 +2375,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RotatingFileHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RotatingFileHandlerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Fragment/RoutableFragmentRenderer.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Fragment/RoutableFragmentRenderer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fragment/RoutableFragmentRendererTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fragment/RoutableFragmentRendererTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Route.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Annotation/Route.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Annotation/Route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteCacheCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteCacheCommand.php" />
@@ -2587,6 +2527,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/Util/StrTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/Util/StrTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/StreamHasher.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/StreamHasher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/StreamOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/StreamOutput.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/StreamOutputTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Output/StreamOutputTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedCopyTrait.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedCopyTrait.php" />
@@ -2596,6 +2537,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/StreamedResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/StreamedResponseTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/CodeCleaner/StrictTypesPass.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/CodeCleaner/StrictTypesPass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/CodeCleaner/StrictTypesPassTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/CodeCleaner/StrictTypesPassTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/String.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/String.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/StringContains.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/StringContains.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/StringContainsToken.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/StringContainsToken.php" />
@@ -2748,6 +2691,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/DataCollector/TranslationDataCollector.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/DataCollector/TranslationDataCollector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/DataCollector/TranslationDataCollectorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/DataCollector/TranslationDataCollectorTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Writer/TranslationWriter.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Writer/TranslationWriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Writer/TranslationWriterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Writer/TranslationWriterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Translator.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Translator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Translator.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Translator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/TranslatorBagInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/TranslatorBagInterface.php" />
@@ -2766,7 +2710,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/TraversablePatchSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/TraversablePatchSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TryCatch.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TryCatch.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TwigCollector.php" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TwigCollector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/TwoTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/TwoTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Type.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Type.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Exception/TypeErrorException.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Exception/TypeErrorException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TypeToken.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TypeToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/TypeTokenSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/TypeTokenSpec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/UPGRADE-1.0.md" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/UPGRADE-1.0.md" />
@@ -2861,7 +2807,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyPostSize.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyPostSize.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/View.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/View.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewClearCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewClearCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/ViewCollector.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/ViewCollector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ViewErrorBag.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ViewErrorBag.php" />
@@ -2942,6 +2887,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/abstract-test-class.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/abstract-test-class.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/abstract.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/abstract.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/song/addSong.blade.php" afterPath="$PROJECT_DIR$/resources/views/song/addSong.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/af.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/af.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/af.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/af.js" />
@@ -3056,12 +3002,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/autogrow/autogrow.html" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/autogrow/autogrow.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/bad_format.yml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/bad_format.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fixtures/Bundle1Bundle/bar.txt" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fixtures/Bundle1Bundle/bar.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/bar.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/bar.xml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/bar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/basic.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/basic.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/bbcode/bbcode.html" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/bbcode/bbcode.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/bg.js" />
@@ -3160,6 +3107,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/bs.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/bs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/build.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/sebastian/environment/build.xml" afterPath="$PROJECT_DIR$/vendor/sebastian/environment/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/other/build_phar.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/other/build_phar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/dialogs/button.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/dialogs/button.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/byRef.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/byRef.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/byte_safe_strings.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/byte_safe_strings.php" />
@@ -3199,9 +3147,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/build/ca.pem" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/build/ca.pem" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/stubs/cache.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/stubs/cache.stub" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/call.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/call.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/lessons/cart_comments_section.blade.php" afterPath="$PROJECT_DIR$/resources/views/lessons/cart_comments_section.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/casemismatch.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/casemismatch.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/cast.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/cast.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/cast_to_int.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/cast_to_int.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/song/comments/category.blade.php" afterPath="$PROJECT_DIR$/resources/views/song/comments/category.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/changelog.md" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/changelog.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/dialogs/checkbox.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/dialogs/checkbox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" />
@@ -3246,7 +3196,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/composer.json" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/composer.json" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/composer.json" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Broadcasting/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Broadcasting/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Bus/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/composer.json" />
@@ -3279,7 +3228,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/translation/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/composer.lock" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/concrete-test-class.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/concrete-test-class.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/conditional.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/conditional.test" />
@@ -3303,6 +3251,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/configuration_xinclude.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/configuration_xinclude.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/console.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/console.stub" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/const.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/const.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/const.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/const.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constFetch.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constFetch.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constantDeref.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constantDeref.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/constantString.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/constantString.test" />
@@ -3427,6 +3376,44 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml-isolation.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml-isolation.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-testdox.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-testdox.phpt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colorbutton/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colorbutton/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colordialog/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colordialog/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/devtools/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/devtools/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/div/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/div/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/docprops/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/docprops/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/embedbase/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/embedbase/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/filetools/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/filetools/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/find/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/find/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/flash/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/font/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/font/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/forms/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/iframe/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/iframe/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/image2/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/image2/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/justify/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/justify/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/language/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/language/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/liststyle/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/liststyle/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/mathjax/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/mathjax/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/newpage/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/newpage/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/notification/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/notification/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/pagebreak/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/pagebreak/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/placeholder/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/placeholder/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/preview/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/preview/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/print/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/print/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/save/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/save/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/selectall/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/selectall/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/showblocks/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/showblocks/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uploadwidget/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uploadwidget/lang/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/de-ch.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/de-ch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/de.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/de.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/de.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/de.js" />
@@ -3470,6 +3457,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/debugbar.js" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/debugbar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/config/debugbar.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/config/debugbar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/declare.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/declare.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/declare.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/declare.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/default-isolation.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/default-isolation.phpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/pastefromword/filter/default.js" />
@@ -3554,6 +3542,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/el.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/el.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/lang/el.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uploadwidget/lang/el.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uploadwidget/lang/el.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/el.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/el.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/embedbase/dialogs/embedbase.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/embedbase/dialogs/embedbase.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml" />
@@ -4103,6 +4092,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uploadwidget/lang/gl.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uploadwidget/lang/gl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/gl.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/gl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/globalNonSimpleVarError.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/globalNonSimpleVarError.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/global_static_variables.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/global_static_variables.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/goto.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/goto.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/group-isolation.phpt" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/group-isolation.phpt" />
@@ -4136,6 +4126,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/lang/gu.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/smiley/lang/gu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/lang/gu.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/lang/gu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/gu.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/haltCompiler.file-test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/haltCompiler.file-test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompiler.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompiler.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerInvalidSyntax.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerInvalidSyntax.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerOffset.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerOffset.test" />
@@ -4393,9 +4384,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/input_option_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/int.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/int.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/interface.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/interface.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/intrinsics.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/intrinsics.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/invalid-xml-resources.xlf" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/invalid-xml-resources.xlf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/invalidName.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/invalidName.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/ipsum.txt" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Fixtures/ipsum.txt" />
@@ -4732,6 +4723,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/mix.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/mix.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/mk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/mk.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/mk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/mk.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/bidi/lang/mk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colorbutton/lang/mk.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colorbutton/lang/mk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colordialog/lang/mk.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/colordialog/lang/mk.js" />
@@ -4944,6 +4936,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/notBraced.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/notBraced.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/classmap/notPhpFile.md" afterPath="$PROJECT_DIR$/vendor/symfony/class-loader/Tests/Fixtures/classmap/notPhpFile.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/notPsr0Bis.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/notPsr0Bis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/nsAfterHashbang.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/nsAfterHashbang.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/null_values.xml" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/null_values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/numbers.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/numbers.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/objectAccess.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/objectAccess.test" />
@@ -4969,6 +4962,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/outsideStmt.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/outsideStmt.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/outsideStmtInvalid.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/outsideStmtInvalid.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/package.json" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/packagelist.txt" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/packagelist.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" />
@@ -4976,7 +4970,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/parser.template" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/parser.template" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/clipboard/dialogs/paste.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/pdo_storage_schema.sql" afterPath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/pdo_storage_schema.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/php-parse" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/php4Style.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/php4Style.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/php5.y" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/php5.y" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/php7.y" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/php7.y" />
@@ -5008,7 +5001,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265/phpunit1265.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265/phpunit1265.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1330/phpunit1330.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1330/phpunit1330.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322/phpunit322.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322/phpunit322.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/phpunit" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/pl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/pl.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/pl.js" />
@@ -5111,8 +5103,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/preview/preview.html" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/preview/preview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/print.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/print.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/provider.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/provider.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/psysh" afterPath="$PROJECT_DIR$/vendor/bin/psysh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/bin/psysh" afterPath="$PROJECT_DIR$/vendor/psy/psysh/bin/psysh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/lang/pt-br.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/pt-br.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/autoembed/lang/pt-br.js" />
@@ -5194,6 +5184,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_libsodium_legacy.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_libsodium_legacy.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_mcrypt.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_mcrypt.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_openssl.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_openssl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/dist/random_compat.phar.pubkey.asc" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/dist/random_compat.phar.pubkey.asc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/dist/random_compat.phar.pubkey" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/dist/random_compat.phar.pubkey" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_int.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_int.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/legacy/.psysh/rc.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/legacy/.psysh/rc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/mixed/.psysh/rc.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/mixed/.psysh/rc.php" />
@@ -5423,6 +5415,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/sockets.md" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/doc/sockets.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/song/comments/song.blade.php" afterPath="$PROJECT_DIR$/resources/views/song/comments/song.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/sourcedialog/sourcedialog.html" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/sourcedialog/sourcedialog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/dialogs/sourcedialog.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/sourcedialog/dialogs/sourcedialog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/specialVars.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/specialVars.test" />
@@ -5837,6 +5830,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/vi.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/templates/lang/vi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/lang/vi.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/lang/vi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/vi.js" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/widget/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/song/voting.blade.php" afterPath="$PROJECT_DIR$/resources/views/song/voting.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/loop/while.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/loop/while.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/while.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/while.test" />
@@ -5861,6 +5855,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/xhtmlstyle.html" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/samples/old/xhtmlstyle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Loader/schema/dic/xliff-core/xliff-core-1.2-strict.xsd" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Loader/schema/dic/xliff-core/xliff-core-1.2-strict.xsd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Loader/schema/dic/xliff-core/xml.xsd" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Loader/schema/dic/xliff-core/xml.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/yield.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/yield.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldPrecedence.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldPrecedence.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldUnaryPrecedence.test" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldUnaryPrecedence.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" afterPath="$PROJECT_DIR$/vendor/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" />
@@ -6005,11 +6000,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.2298137">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -6023,16 +6018,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/lessons/comments_section_cart.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/song/comments/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/LessonsComment.php" />
-        <option value="$PROJECT_DIR$/resources/views/lessons/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/AddSong.php" />
-        <option value="$PROJECT_DIR$/app/Models/Voting.php" />
-        <option value="$PROJECT_DIR$/app/Models/VotingIp.php" />
-        <option value="$PROJECT_DIR$/app/Models/Lessons.php" />
-        <option value="$PROJECT_DIR$/app/Models/VotingList.php" />
-        <option value="$PROJECT_DIR$/app/Models/CategorySong.php" />
         <option value="$PROJECT_DIR$/config/administrator/lessonsComment.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LessonsController.php" />
         <option value="$PROJECT_DIR$/resources/views/song/comments/category.blade.php" />
@@ -6040,7 +6025,6 @@
         <option value="$PROJECT_DIR$/resources/views/lessons/cart_comments_section.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/lessons/cart.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/uk/validation.php" />
-        <option value="$PROJECT_DIR$/resources/views/song/addSong.blade.php" />
         <option value="$PROJECT_DIR$/config/administrator/songComment.php" />
         <option value="$PROJECT_DIR$/resources/views/song/listSong.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SongController.php" />
@@ -6059,7 +6043,6 @@
         <option value="$PROJECT_DIR$/resources/views/song/listPerformer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/song/ajaxPaginate/ListPerformer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/song/cartPerformer.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_performer_table.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PerformerController.php" />
         <option value="$PROJECT_DIR$/config/administrator/performer.php" />
@@ -6073,7 +6056,19 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/footer.blade.php" />
         <option value="$PROJECT_DIR$/tests/TestCase.php" />
+        <option value="$PROJECT_DIR$/tests/ExampleTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/song/addSong.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_performer_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_song_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_03_12_165738_create_lessons_table.php" />
+        <option value="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/auth.php" />
+        <option value="$PROJECT_DIR$/app/Models/User.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -6094,9 +6089,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -6121,8 +6116,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -6141,27 +6134,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prochord" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prochord" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../korelyaciya" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
@@ -6169,10 +6150,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config/administrator" />
       <recent name="$PROJECT_DIR$/resources/views/pages" />
-      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/resources/views/lessons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -6231,16 +6212,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45241582" sideWeight="0.5059347" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40801188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1749634" sideWeight="0.51186943" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7195846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29502195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1749634" sideWeight="0.49406528" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1749634" sideWeight="0.48813057" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -6271,176 +6252,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/administrator/lessonsComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84006464">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator/lessons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39579967">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/image/guitar/guitar-1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/chordSong.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55250406">
-          <caret line="19" column="96" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/song/listSong.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31987077">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52342486">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Lessons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5056543">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5815832">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/web.config">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_24_121932_create_indexComment_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6688207">
-          <caret line="24" column="5" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/song/addSong.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49434572">
-          <caret line="57" column="118" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4361874">
-          <caret line="15" column="47" selection-start-line="13" selection-start-column="35" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/song/comments/song.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20355412">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Feedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49434572">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/feedback.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40387723">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/ru/validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/uk/translation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.25926">
-          <caret line="261" column="54" selection-start-line="260" selection-start-column="3" selection-end-line="261" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/ru/translation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84006464">
-          <caret line="259" column="32" selection-start-line="259" selection-start-column="32" selection-end-line="259" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/translation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8869144">
-          <caret line="259" column="32" selection-start-line="259" selection-start-column="32" selection-end-line="259" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator/indexComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5815832">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20355412">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator/alphabet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63974154">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator/feedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02907916">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_17_140007_create_feedback_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2907916">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42326334">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6469,13 +6285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69491524">
           <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_performer_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52342486">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -6591,22 +6400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ExampleTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -6614,22 +6407,198 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5525607">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.14958449">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ExampleTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29916897">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/song/addSong.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6914378">
+          <caret line="81" column="99" selection-start-line="81" selection-start-column="99" selection-end-line="81" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_alphabet_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.29916897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_18_121432_create_menus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.44875348">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_18_121432_create_voting_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_18_121432_create_votingList_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_20_121932_create_slides_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_24_121932_create_indexComment_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.962963">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_24_121932_create_songComment_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_24_121932_create_votingIp_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_categorySong_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_chordSong_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_performer_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26592797">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_01_18_110503_create_song_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34903046">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_12_165738_create_lessons_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6980609">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_12_180253_create_lessonsComment_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_17_140007_create_feedback_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3130194">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.649919">
+          <caret line="7676" column="17" selection-start-line="7676" selection-start-column="17" selection-end-line="7676" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.083591335">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3489499">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31987077">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="29.407408">
+          <caret line="140" column="43" selection-start-line="140" selection-start-column="43" selection-end-line="140" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3489499">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2298137">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
