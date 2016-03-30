@@ -43,7 +43,10 @@ class ClassCollectionLoader
 
         self::$loaded[$name] = true;
 
-        $declared = array_merge(get_declared_classes(), get_declared_interfaces(), get_declared_traits());
+        $declared = array_merge(get_declared_classes(), get_declared_interfaces());
+        if (function_exists('get_declared_traits')) {
+            $declared = array_merge($declared, get_declared_traits());
+        }
 
         if ($adaptive) {
             // don't include already declared classes
@@ -146,9 +149,8 @@ class ClassCollectionLoader
         $inNamespace = false;
         $tokens = token_get_all($source);
 
-        for ($i = 0; isset($tokens[$i]); ++$i) {
-            $token = $tokens[$i];
-            if (!isset($token[1]) || 'b"' === $token) {
+        for (reset($tokens); false !== $token = current($tokens); next($tokens)) {
+            if (is_string($token)) {
                 $rawChunk .= $token;
             } elseif (in_array($token[0], array(T_COMMENT, T_DOC_COMMENT))) {
                 // strip comments
@@ -160,12 +162,12 @@ class ClassCollectionLoader
                 $rawChunk .= $token[1];
 
                 // namespace name and whitespaces
-                while (isset($tokens[++$i][1]) && in_array($tokens[$i][0], array(T_WHITESPACE, T_NS_SEPARATOR, T_STRING))) {
-                    $rawChunk .= $tokens[$i][1];
+                while (($t = next($tokens)) && is_array($t) && in_array($t[0], array(T_WHITESPACE, T_NS_SEPARATOR, T_STRING))) {
+                    $rawChunk .= $t[1];
                 }
-                if ('{' === $tokens[$i]) {
+                if ('{' === $t) {
                     $inNamespace = false;
-                    --$i;
+                    prev($tokens);
                 } else {
                     $rawChunk = rtrim($rawChunk)."\n{";
                     $inNamespace = true;
@@ -173,8 +175,8 @@ class ClassCollectionLoader
             } elseif (T_START_HEREDOC === $token[0]) {
                 $output .= self::compressCode($rawChunk).$token[1];
                 do {
-                    $token = $tokens[++$i];
-                    $output .= isset($token[1]) && 'b"' !== $token ? $token[1] : $token;
+                    $token = next($tokens);
+                    $output .= is_string($token) ? $token : $token[1];
                 } while ($token[0] !== T_END_HEREDOC);
                 $output .= "\n";
                 $rawChunk = '';
@@ -190,15 +192,7 @@ class ClassCollectionLoader
             $rawChunk .= "}\n";
         }
 
-        $output .= self::compressCode($rawChunk);
-
-        if (PHP_VERSION_ID >= 70000) {
-            // PHP 7 memory manager will not release after token_get_all(), see https://bugs.php.net/70098
-            unset($tokens, $rawChunk);
-            gc_mem_caches();
-        }
-
-        return $output;
+        return $output.self::compressCode($rawChunk);
     }
 
     /**
@@ -289,10 +283,12 @@ class ClassCollectionLoader
 
         $traits = array();
 
-        foreach ($classes as $c) {
-            foreach (self::resolveDependencies(self::computeTraitDeps($c), $c) as $trait) {
-                if ($trait !== $c) {
-                    $traits[] = $trait;
+        if (method_exists('ReflectionClass', 'getTraits')) {
+            foreach ($classes as $c) {
+                foreach (self::resolveDependencies(self::computeTraitDeps($c), $c) as $trait) {
+                    if ($trait !== $c) {
+                        $traits[] = $trait;
+                    }
                 }
             }
         }

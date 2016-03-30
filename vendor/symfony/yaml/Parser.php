@@ -238,6 +238,10 @@ class Parser
                 if ($isRef) {
                     $this->refs[$isRef] = $data[$key];
                 }
+
+                if ($objectForMap && !is_object($data)) {
+                    $data = (object) $data;
+                }
             } else {
                 // multiple documents are not supported
                 if ('---' === $this->currentLine) {
@@ -301,16 +305,6 @@ class Parser
             mb_internal_encoding($mbEncoding);
         }
 
-        if ($objectForMap && !is_object($data) && 'mapping' === $context) {
-            $object = new \stdClass();
-
-            foreach ($data as $key => $value) {
-                $object->$key = $value;
-            }
-
-            $data = $object;
-        }
-
         return empty($data) ? null : $data;
     }
 
@@ -347,11 +341,7 @@ class Parser
     private function getNextEmbedBlock($indentation = null, $inSequence = false)
     {
         $oldLineIndentation = $this->getCurrentLineIndentation();
-        $blockScalarIndentations = array();
-
-        if ($this->isBlockScalarHeader()) {
-            $blockScalarIndentations[] = $this->getCurrentLineIndentation();
-        }
+        $insideBlockScalar = $this->isBlockScalarHeader();
 
         if (!$this->moveToNextLine()) {
             return;
@@ -388,8 +378,8 @@ class Parser
 
         $isItUnindentedCollection = $this->isStringUnIndentedCollectionItem();
 
-        if (empty($blockScalarIndentations) && $this->isBlockScalarHeader()) {
-            $blockScalarIndentations[] = $this->getCurrentLineIndentation();
+        if (!$insideBlockScalar) {
+            $insideBlockScalar = $this->isBlockScalarHeader();
         }
 
         $previousLineIndentation = $this->getCurrentLineIndentation();
@@ -397,17 +387,8 @@ class Parser
         while ($this->moveToNextLine()) {
             $indent = $this->getCurrentLineIndentation();
 
-            // terminate all block scalars that are more indented than the current line
-            if (!empty($blockScalarIndentations) && $indent < $previousLineIndentation && trim($this->currentLine) !== '') {
-                foreach ($blockScalarIndentations as $key => $blockScalarIndentation) {
-                    if ($blockScalarIndentation >= $this->getCurrentLineIndentation()) {
-                        unset($blockScalarIndentations[$key]);
-                    }
-                }
-            }
-
-            if (empty($blockScalarIndentations) && !$this->isCurrentLineComment() && $this->isBlockScalarHeader()) {
-                $blockScalarIndentations[] = $this->getCurrentLineIndentation();
+            if (!$insideBlockScalar && $indent === $previousLineIndentation) {
+                $insideBlockScalar = $this->isBlockScalarHeader();
             }
 
             $previousLineIndentation = $indent;
@@ -423,7 +404,7 @@ class Parser
             }
 
             // we ignore "comment" lines only when we are not inside a scalar block
-            if (empty($blockScalarIndentations) && $this->isCurrentLineComment()) {
+            if (!$insideBlockScalar && $this->isCurrentLineComment()) {
                 continue;
             }
 
@@ -588,7 +569,7 @@ class Parser
             $previousLineIndented = false;
             $previousLineBlank = false;
 
-            for ($i = 0; $i < count($blockLines); ++$i) {
+            for ($i = 0; $i < count($blockLines); $i++) {
                 if ('' === $blockLines[$i]) {
                     $text .= "\n";
                     $previousLineIndented = false;
@@ -683,7 +664,7 @@ class Parser
         //checking explicitly the first char of the trim is faster than loops or strpos
         $ltrimmedLine = ltrim($this->currentLine, ' ');
 
-        return '' !== $ltrimmedLine && $ltrimmedLine[0] === '#';
+        return $ltrimmedLine[0] === '#';
     }
 
     /**

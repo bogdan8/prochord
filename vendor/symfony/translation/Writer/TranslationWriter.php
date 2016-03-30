@@ -45,9 +45,7 @@ class TranslationWriter
     public function disableBackup()
     {
         foreach ($this->dumpers as $dumper) {
-            if (method_exists($dumper, 'setBackup')) {
-                $dumper->setBackup(false);
-            }
+            $dumper->setBackup(false);
         }
     }
 
