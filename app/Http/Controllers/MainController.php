@@ -8,11 +8,16 @@ use App\Models\Menu;
 use App\Models\Performer;
 use App\Models\Slider;
 use App\Models\Song;
+use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function __construct(Menu $menuModel, Slider $slider, Alphabet $alphabet,Song $song,Performer $performer,Lessons $lessons)
+    public function __construct(Menu $menuModel, Slider $slider, Alphabet $alphabet,Song $song,Performer $performer,Lessons $lessons,Request $request)
     {
+        $this->performer = $performer; #Models performer
+        $this->song = $song; #Models song
+        $this->lessons = $lessons; #Models performer
+        $this->request = $request; #request
 
         $this->data['menu']['left'] = $menuModel->getLeftMenu();
         $this->data['menu']['right'] = $menuModel->getRightMenu();

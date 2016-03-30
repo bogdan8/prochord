@@ -5,23 +5,20 @@ namespace App\Http\Controllers;
 use App\Models\AddSong;
 use App\Models\CategorySong;
 use App\Models\IndexComment;
-use App\Models\Performer;
-use App\Models\Song;
 use App\Models\SongComment;
 use App\Models\Voting;
 use App\Models\VotingIp;
 use App\Models\VotingList;
-use Illuminate\Http\Request;
 
 class SongController extends MainController
 {
 
-    public function listCategory(CategorySong $categorySong, IndexComment $indexComment, Voting $voting, VotingList $votingList, VotingIp $votingIp, Request $request)
+    public function listCategory(CategorySong $categorySong, IndexComment $indexComment, Voting $voting, VotingList $votingList, VotingIp $votingIp)
     {
         /**-------------------------------------------------------------
          * Add a comment to the category list
          * ----------------------------------------------------------------**/
-        if ($request->has('body')) {
+        if ($this->request->has('body')) {
             $validator = IndexComment::validate(\Input::all());
             if ($validator->fails()) {
                 return \Response::json([
@@ -30,9 +27,9 @@ class SongController extends MainController
                 ]);
             } else {
                 $indexComment = new indexComment();
-                $indexComment->name = $request->get('name');
-                $indexComment->email = $request->get('email');
-                $indexComment->body = $request->get('body');
+                $indexComment->name = $this->request->get('name');
+                $indexComment->email = $this->request->get('email');
+                $indexComment->body = $this->request->get('body');
                 $indexComment->date = date("Y-m-d h:i:s");
                 $indexComment->save();
 
@@ -64,7 +61,7 @@ class SongController extends MainController
         $this->data['voting'] = $voting->getActive();
         $this->data['voting_list'] = $votingList->getActive();
         $this->data['votingIp'] = $votingIp->getActive();
-        if ($request->has('voting_id')) {
+        if ($this->request->has('voting_id')) {
             $browser_name = $_SERVER ['HTTP_USER_AGENT'];// Writes to change the name of the browser for statistics
             $voting_id_form = \Input::get('voting_value');// Writing values from form
             $getVotingId = $votingList->getVotingIpCheck($voting_id_form);//Retrieves the ID where it is mentioned on the form
@@ -109,7 +106,7 @@ class SongController extends MainController
         return view('song.listCategory', $this->data);
     }
 
-    public function listSongs(Song $song, Request $request)
+    public function listSongs()
     {
         /**-------------------------------------------------------------
          * Sorting the list of songs
@@ -118,22 +115,22 @@ class SongController extends MainController
             $input = \Input::all();
             $sort = $input['sort'];
             $sortBy = $input['sortBy'];
-            $this->data['listSongs'] = $song->sortSong($sort, $sortBy);
+            $this->data['listSongs'] = $this->song->sortSong($sort, $sortBy);
         } else {
-            $this->data['listSongs'] = $song->getActiveSongs();
+            $this->data['listSongs'] = $this->song->getActiveSongs();
         }
         /**-------------------------------------------------------------
          * End of sorting the list of songs
          * ----------------------------------------------------------------**/
-        $this->data['most_popular'] = $song->most_popular();
-        $this->data['last_add'] = $song->last_add();
-        if ($request->ajax()) {
+        $this->data['most_popular'] = $this->song->most_popular();
+        $this->data['last_add'] = $this->song->last_add();
+        if ($this->request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());
         }
         return view('song.listSong', $this->data);
     }
 
-    public function listSongsSort($item, Song $song, Request $request)
+    public function listSongsSort($item)
     {
         /**-------------------------------------------------------------
          * Sorting the list of songs
@@ -142,23 +139,23 @@ class SongController extends MainController
             $input = \Input::all();
             $sort = $input['sort'];
             $sortBy = $input['sortBy'];
-            $this->data['listSongs'] = $song->sortSongAlphabet($item,$sort, $sortBy);
+            $this->data['listSongs'] = $this->song->sortSongAlphabet($item, $sort, $sortBy);
         } else {
-            $this->data['listSongs'] = $song->songAlphabet($item);
+            $this->data['listSongs'] = $this->song->songAlphabet($item);
         }
         /**-------------------------------------------------------------
          * End of sorting the list of songs
          * ----------------------------------------------------------------**/
-        $this->data['most_popular'] = $song->most_popular_sort($item);
-        $this->data['last_add'] = $song->last_add_sort($item);
+        $this->data['most_popular'] = $this->song->most_popular_sort($item);
+        $this->data['last_add'] = $this->song->last_add_sort($item);
         $this->data['letter'] = $item;
-        if ($request->ajax()) {
+        if ($this->request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());
         }
         return view('song.listSong', $this->data);
     }
 
-    public function songsInCategory($title_eng, Song $song, CategorySong $categorySong, Request $request)
+    public function songsInCategory($title_eng, CategorySong $categorySong)
     {
         /**-------------------------------------------------------------
          * Count the number of hits categories and overwrites data in the database
@@ -177,9 +174,9 @@ class SongController extends MainController
             $input = \Input::all();
             $sort = $input['sort'];
             $sortBy = $input['sortBy'];
-            $this->data['Song'] = $song->sortSongInCategory($idCat, $sort, $sortBy);
+            $this->data['Song'] = $this->song->sortSongInCategory($idCat, $sort, $sortBy);
         } else {
-            $this->data['Song'] = $song->getActivePag($idCat);
+            $this->data['Song'] = $this->song->getActivePag($idCat);
         }
         /**-------------------------------------------------------------
          * End of sorting the list of songs in categories
@@ -187,24 +184,24 @@ class SongController extends MainController
         /**-------------------------------------------------------------
          * Retrieves the latest and most popular songs in the category
          * ----------------------------------------------------------------**/
-        $this->data['most_popular'] = $song->most_popular_songInCategory($idCat);
-        $this->data['last_add'] = $song->last_add_songInCategory($idCat);
+        $this->data['most_popular'] = $this->song->most_popular_songInCategory($idCat);
+        $this->data['last_add'] = $this->song->last_add_songInCategory($idCat);
         /**-------------------------------------------------------------
          * End retrieves the newest and most popular songs in the category
          * ----------------------------------------------------------------**/
-        if ($request->ajax()) {
+        if ($this->request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.SongsInCategory', $this->data)->render());
         }
         return view('song.songsInCategory', $this->data);
 
     }
 
-    public function cartSongInCategory($title_eng, $slug, Song $song, CategorySong $categorySong, SongComment $songComment, Performer $performer, Request $request)
+    public function cartSongInCategory($title_eng, $slug, CategorySong $categorySong, SongComment $songComment)
     {
         /**-------------------------------------------------------------
          * Add a comment to song
          * ----------------------------------------------------------------**/
-        if ($request->has('songId')) {
+        if ($this->request->has('songId')) {
             $validator = SongComment::validate(\Input::all());
             if ($validator->fails()) {
                 return \Response::json([
@@ -213,10 +210,10 @@ class SongController extends MainController
                 ]);
             } else {
                 $songComment = new SongComment();
-                $songComment->song_id = $request->get('songId');
-                $songComment->name = $request->get('name');
-                $songComment->email = $request->get('email');
-                $songComment->body = $request->get('body');
+                $songComment->song_id = $this->request->get('songId');
+                $songComment->name = $this->request->get('name');
+                $songComment->email = $this->request->get('email');
+                $songComment->body = $this->request->get('body');
                 $songComment->date = date("Y-m-d h:i:s");
                 $songComment->save();
 
@@ -233,26 +230,26 @@ class SongController extends MainController
          * ----------------------------------------------------------------**/
         if (isset($_POST['Like'])) {
             $song_id = \Input::get('song_id'); // Id writes songs
-            $selectHeart = $song->getAddressHeart($song_id);
+            $selectHeart = $this->song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart + 1;
             $selectAddress = $selectHeart->address; //Writes to change ip that is in the database
             $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
             if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                $song->addOneHeart($song_id, $increaseNumber, $userAddress);
+                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
                 $this->data['Like'] = trans('translation.Вам_сподобалось');
             }
         } elseif (isset($_POST['UnLike'])) {
             $song_id = \Input::get('song_id');
-            $selectHeart = $song->getAddressHeart($song_id);
+            $selectHeart = $this->song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart - 1;
             $selectAddress = $selectHeart->address;
             $userAddress = $_SERVER ['REMOTE_ADDR'];
             if ($selectAddress == $userAddress) {
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                $song->addOneHeart($song_id, $increaseNumber, $userAddress);
+                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
                 $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
             }
         }
@@ -262,36 +259,36 @@ class SongController extends MainController
         /**-------------------------------------------------------------
          * Count the number of times songs and overwrites data in the database
          * ----------------------------------------------------------------**/
-        $id_data = $song->oneSong($slug);
+        $id_data = $this->song->oneSong($slug);
         $idSong = $id_data->id;//Ід Пісні
-        $song->incrementViewsSong($idSong);
+        $this->song->incrementViewsSong($idSong);
         /**-------------------------------------------------------------
          * The end count number of times song and overwrites data in the database
          * ----------------------------------------------------------------**/
         $this->data['get'] = $categorySong->getId($title_eng);
-        $this->data['cartSong'] = $song->oneSong($slug);
+        $this->data['cartSong'] = $this->song->oneSong($slug);
         /**-------------------------------------------------------------
          * Retrieves the latest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $idCat = $this->data['get']->id;
-        $this->data['most_popular'] = $song->most_popular_songInCategory($idCat);
-        $this->data['last_add'] = $song->last_add_songInCategory($idCat);
+        $this->data['most_popular'] = $this->song->most_popular_songInCategory($idCat);
+        $this->data['last_add'] = $this->song->last_add_songInCategory($idCat);
         /**-------------------------------------------------------------
          * End retrieves the newest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $this->data['songComment'] = $songComment->getActive($idSong);
-        $this->data['performer'] = $performer->getActive();
+        $this->data['performer'] = $this->performer->getActive();
 
         return view('song.cartSong', $this->data);
 
     }
 
-    public function cartSongs($slug, Song $song, CategorySong $categorySong, SongComment $songComment, Performer $performer, Request $request)
+    public function cartSongs($slug, CategorySong $categorySong, SongComment $songComment)
     {
         /**-------------------------------------------------------------
          * Add narration to song
          * ----------------------------------------------------------------**/
-        if ($request->has('songId')) {
+        if ($this->request->has('songId')) {
             $validator = SongComment::validate(\Input::all());
             if ($validator->fails()) {
                 return \Response::json([
@@ -300,10 +297,10 @@ class SongController extends MainController
                 ]);
             } else {
                 $songComment = new SongComment();
-                $songComment->song_id = $request->get('songId');
-                $songComment->name = $request->get('name');
-                $songComment->email = $request->get('email');
-                $songComment->body = $request->get('body');
+                $songComment->song_id = $this->request->get('songId');
+                $songComment->name = $this->request->get('name');
+                $songComment->email = $this->request->get('email');
+                $songComment->body = $this->request->get('body');
                 $songComment->date = date("Y-m-d h:i:s");
                 $songComment->save();
 
@@ -320,26 +317,26 @@ class SongController extends MainController
          * ----------------------------------------------------------------**/
         if (isset($_POST['Like'])) {
             $song_id = \Input::get('song_id'); // Id writes songs
-            $selectHeart = $song->getAddressHeart($song_id);
+            $selectHeart = $this->song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart + 1;
             $selectAddress = $selectHeart->address; // Writes to change ip that is in the database
             $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
             if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                $song->addOneHeart($song_id, $increaseNumber, $userAddress);
+                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
                 $this->data['Like'] = trans('translation.Вам_сподобалось');
             }
         } elseif (isset($_POST['UnLike'])) {
             $song_id = \Input::get('song_id');
-            $selectHeart = $song->getAddressHeart($song_id);
+            $selectHeart = $this->song->getAddressHeart($song_id);
             $increaseNumber = $selectHeart->heart - 1;
             $selectAddress = $selectHeart->address;
             $userAddress = $_SERVER ['REMOTE_ADDR'];
             if ($selectAddress == $userAddress) {
                 $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
             } else {
-                $song->addOneHeart($song_id, $increaseNumber, $userAddress);
+                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
                 $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
             }
         }
@@ -349,9 +346,9 @@ class SongController extends MainController
         /**-------------------------------------------------------------
          * Retrieves category properly that song
          * ---------------------------------------------------------------**/
-        $getSong = $song->oneSong($slug);
+        $getSong = $this->song->oneSong($slug);
         $idSong = $getSong->id;
-        $song->incrementViewsSong($idSong);// count the number of hits songs
+        $this->song->incrementViewsSong($idSong);// count the number of hits songs
         /** song ID */
         $id = $getSong->category_song_id;
         /** category ID */
@@ -363,25 +360,25 @@ class SongController extends MainController
          * Retrieves the latest and most popular songs in the category
          * ----------------------------------------------------------------**/
         $idCat = $this->data['get']->id;
-        $this->data['most_popular'] = $song->most_popular_songInCategory($idCat);
-        $this->data['last_add'] = $song->last_add_songInCategory($idCat);
+        $this->data['most_popular'] = $this->song->most_popular_songInCategory($idCat);
+        $this->data['last_add'] = $this->song->last_add_songInCategory($idCat);
         /**-------------------------------------------------------------
          * End retrieves the newest and most popular songs in the category
          * ----------------------------------------------------------------**/
-        $this->data['cartSong'] = $song->oneSong($slug);
+        $this->data['cartSong'] = $this->song->oneSong($slug);
         $this->data['songComment'] = $songComment->getActive($idSong);
-        $this->data['performer'] = $performer->getActive();
+        $this->data['performer'] = $this->performer->getActive();
 
         return view('song.cartSong', $this->data);
 
     }
 
-    public function addSong(AddSong $addSong, CategorySong $categorySong, Performer $performer, Request $request)
+    public function addSong(CategorySong $categorySong)
     {
         /**-------------------------------------------------------------
          * Add narration to song
          * ----------------------------------------------------------------**/
-        if ($request->has('tabulature')) {
+        if ($this->request->has('tabulature')) {
             $validator = AddSong::validate(\Input::all());
             if ($validator->fails()) {
                 return \Response::json([
@@ -391,14 +388,14 @@ class SongController extends MainController
             } else {
                 $AddSong = new AddSong();
                 $AddSong->active = '0';
-                $AddSong->title = $request->get('name');
-                $AddSong->who_added = $request->get('you_name');
-                $AddSong->slug = $request->get('name') . '_user';
-                $AddSong->description = $request->get('description');
-                $AddSong->performer_id = $request->get('performer');
-                $AddSong->category_song_id = $request->get('category');
-                $AddSong->tabulature = $request->get('tabulature');
-                $AddSong->body = $request->get('body');
+                $AddSong->title = $this->request->get('name');
+                $AddSong->who_added = $this->request->get('you_name');
+                $AddSong->slug = $this->request->get('name') . '_user';
+                $AddSong->description = $this->request->get('description');
+                $AddSong->performer_id = $this->request->get('performer');
+                $AddSong->category_song_id = $this->request->get('category');
+                $AddSong->tabulature = $this->request->get('tabulature');
+                $AddSong->body = $this->request->get('body');
                 $AddSong->save();
 
                 return \Response::json([
@@ -407,7 +404,7 @@ class SongController extends MainController
             }
         }
         $this->data['category'] = $categorySong->getActive();
-        $this->data['performer'] = $performer->getActive();
+        $this->data['performer'] = $this->performer->getActive();
         return view('song.addSong', $this->data);
 
     }

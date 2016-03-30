@@ -2,14 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Performer;
-use App\Models\Song;
-use Illuminate\Http\Request;
 
 class PerformerController extends MainController
 {
 
-    public function performers(Performer $performer, Request $request)
+    public function performers()
     {
         /**-------------------------------------------------------------
          * Sort the list of performers
@@ -18,9 +15,9 @@ class PerformerController extends MainController
             $input = \Input::all();
             $sort = $input['sort'];
             $sortBy = $input['sortBy'];
-            $this->data['performer'] = $performer->sortPerformer($sort, $sortBy);
+            $this->data['performer'] = $this->performer->sortPerformer($sort, $sortBy);
         } else {
-            $this->data['performer'] = $performer->getActivePag();
+            $this->data['performer'] = $this->performer->getActivePag();
         }
         /**-------------------------------------------------------------
          * End sort the list of performers
@@ -28,37 +25,37 @@ class PerformerController extends MainController
         /**-------------------------------------------------------------
          * Retrieves the latest and most popular performers
          * ----------------------------------------------------------------**/
-        $this->data['most_popular'] = $performer->most_popular();
-        $this->data['last_add'] = $performer->last_add();
+        $this->data['most_popular'] = $this->performer->most_popular();
+        $this->data['last_add'] = $this->performer->last_add();
         /**-------------------------------------------------------------
          * End retrieves the newest and most popular performers
          * ----------------------------------------------------------------**/
-        if ($request->ajax()) {
+        if ($this->request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.ListPerformer', $this->data)->render());
         }
         return view('song.listPerformer', $this->data);
     }
 
-    public function cartPerformers($slug, Song $song, Performer $performer, Request $request)
+    public function cartPerformers($slug)
     {
         /**-------------------------------------------------------------
          * Count the number of times the artist and overwrites data in the database
          * ----------------------------------------------------------------**/
-        $id_data = $performer->onePerformer($slug);
+        $id_data = $this->performer->onePerformer($slug);
         $idPerformer = $id_data->id;//id performers
-        $performer->increment_views_performer($idPerformer);// count the number of hits songs
+        $this->performer->increment_views_performer($idPerformer);// count the number of hits songs
         /**-------------------------------------------------------------
          * The end count views performer and overwrites data in the database
          * ----------------------------------------------------------------**/
         /**-------------------------------------------------------------
          * Retrieves category properly that song
          * ----------------------------------------------------------------**/
-        $this->data['getSong'] = $song->SongPerformer($idPerformer);
+        $this->data['getSong'] = $this->song ->SongPerformer($idPerformer);
         /**-------------------------------------------------------------
          * End take out a category that song belongs
          * ----------------------------------------------------------------**/
-        $this->data['cartPerformer'] = $performer->onePerformer($slug);
-        if ($request->ajax()) {
+        $this->data['cartPerformer'] = $this->performer->onePerformer($slug);
+        if ($this->request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.CartPerformer', $this->data)->render());
         }
         return view('song.cartPerformer', $this->data);
