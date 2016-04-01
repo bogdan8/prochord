@@ -188,7 +188,16 @@
                                 </div>
                                 <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
                                     <h2 class="section-heading">{{trans('translation.Файл_з_нотами')}}</h2>
-                                    <a href="/uploads/media_documents/{{$cartSong->media_document}}">{{trans('translation.Скачати')}}</a>
+                                    <a href="/uploads/media_documents/{{$cartSong->media_document}}">
+                                        <p style="text-align: center;">
+                                            {{trans('translation.Скачати')}}
+                                            <?php
+                                            $type = substr($cartSong->media_document, strlen($cartSong->media_document) - 4);
+                                            $type == '.zip' ? $type = '.gp3-4-5' : 0 ;
+                                            ?>
+                                            {{$type}}
+                                        </p>
+                                    </a>
                                 </div>
                             @endif
                         </div>
@@ -208,7 +217,7 @@
                             }
                         })();
                     </script>
-                    <div data-description="{!! strtr($cartSong->body,"_"," ")!!}" style="margin-left: 20px; "
+                    <div data-description="{{ strtr($cartSong->body,"_"," ")}}" style="margin-left: 20px; "
                          data-title="{{$cartSong->title}}"
                          data-url="http://test.ifka.kr.ua/songs/{{$cartSong->title}}" class="pluso"
                          data-background="transparent"
