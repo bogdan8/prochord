@@ -2,6 +2,10 @@
     @foreach($performer as $item)
         <a class="btn btn-primary my_btn"
            href="/performers/{{$item->slug}}">
+            @if(!empty($item->image))
+                <img class="a-img-list-performer"
+                     src="/uploads/performer/{{$item->image}}">
+            @endif
             <p class="computer-title">
                 {{$item->title}}
             </p>

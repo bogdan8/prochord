@@ -163,6 +163,7 @@ $(document).ready(function () {
     /**------------------------ Check the screen size to display some elements -------------------------- */
     if ($(window).width() < 500) {
         $(".computer-title").css('display', 'none');
+        $(".a-img-list-performer").css('display', 'none');//image in performers pages
         $(".phone-title").css('display', 'block');
         $(".songIconCount").removeClass("songIconCount").addClass("songIconCountRight");
         $(".img-comment").css('display', 'none');

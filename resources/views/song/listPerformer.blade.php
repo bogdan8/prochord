@@ -24,6 +24,10 @@
                             @foreach($performer as $item)
                                 <a class="btn btn-primary my_btn"
                                    href="/performers/{{$item->slug}}">
+                                    @if(!empty($item->image))
+                                        <img class="a-img-list-performer"
+                                             src="/uploads/performer/{{$item->image}}">
+                                    @endif
                                     <p class="computer-title">
                                         {{$item->title}}
                                     </p>
@@ -55,7 +59,11 @@
                         @foreach($most_popular as $item)
                             <a class="btn btn-primary my_btn"
                                href="/performers/{{$item->slug}}">
-                                <p style="float: left;">
+                                @if(!empty($item->image))
+                                    <img class="a-img-list-performer"
+                                         src="/uploads/performer/{{$item->image}}">
+                                @endif
+                                <p class="p-title-list-performer">
                                     {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
                                 </p>
                                 <span class="songIconCountRight">
@@ -79,7 +87,11 @@
                         @foreach($last_add as $item)
                             <a class="btn btn-primary my_btn"
                                href="/performers/{{$item->slug}}">
-                                <p style="float: left;">
+                                @if(!empty($item->image))
+                                    <img class="a-img-list-performer"
+                                         src="/uploads/performer/{{$item->image}}">
+                                @endif
+                                <p class="p-title-list-performer">
                                     {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
                                 </p>
                                     <span class="songIconCountRight">

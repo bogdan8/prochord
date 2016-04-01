@@ -503,3 +503,16 @@ textarea.form_control {
 }
 
 /* end right voting */
+/* performer */
+.a-img-list-performer {
+    width: 50px;
+    height: 35px;
+    float: left;
+    margin: -7px;
+    margin-left: -13px;
+}
+.p-title-list-performer {
+    float: left;
+    margin-left: 10px;
+}
+/* end performer */
