@@ -3,8 +3,17 @@
         <a class="btn btn-primary my_btn"
            href="/performers/{{$item->slug}}">
             @if(!empty($item->image))
-                <img class="a-img-list-performer"
-                     src="/uploads/performer/{{$item->image}}">
+                <div class="increase-pictures">
+                    <div>
+                        <img class="a-img-list-performer"
+                             src="/uploads/performer/{{$item->image}}"/>
+
+                        <div>
+                            <img class="resize_thumb"
+                                 src="/uploads/performer/{{$item->image}}"/>
+                        </div>
+                    </div>
+                </div>
             @endif
             <p class="computer-title">
                 {{$item->title}}

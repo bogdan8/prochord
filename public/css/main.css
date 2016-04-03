@@ -504,6 +504,7 @@ textarea.form_control {
 
 /* end right voting */
 /* performer */
+/* increase-pictures */
 .a-img-list-performer {
     width: 50px;
     height: 35px;
@@ -511,8 +512,44 @@ textarea.form_control {
     margin: -7px;
     margin-left: -13px;
 }
+
 .p-title-list-performer {
     float: left;
     margin-left: 10px;
 }
+
+.increase-pictures div {
+    display: block;
+    text-decoration: none;
+}
+
+.increase-pictures div:hover {
+    position: relative;
+}
+
+.increase-pictures div div {
+    position: absolute;
+    display: none;
+    background-color: #449D44;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border-radius: 10px;
+}
+
+.increase-pictures div:hover div {
+    display: block;
+    top: 10px;
+    left: 50px;
+    z-index: 100;
+}
+
+.resize_thumb {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+/* end increase-pictures */
 /* end performer */
