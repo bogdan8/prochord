@@ -10,8 +10,22 @@ use App\Models\Slider;
 use App\Models\Song;
 use Illuminate\Http\Request;
 
+/**
+ * Class MainController
+ * @package App\Http\Controllers
+ */
 class MainController extends Controller
 {
+    /**
+     * @param Menu $menuModel
+     * @param Slider $slider
+     * @param Alphabet $alphabet
+     * @param Song $song
+     * @param Performer $performer
+     * @param Lessons $lessons
+     * @param Request $request
+     */
+
     public function __construct(Menu $menuModel, Slider $slider, Alphabet $alphabet,Song $song,Performer $performer,Lessons $lessons,Request $request)
     {
         $this->performer = $performer; #Models performer

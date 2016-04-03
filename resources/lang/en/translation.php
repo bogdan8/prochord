@@ -211,6 +211,8 @@ return [
     'переглянути_pdf' => 'view pdf',
     'Шрифт' => 'Font',
     'шрифт' => 'font',
+    'Скачати' => 'Download',
+    'скачати' => 'download',
     'Якщо_ви_ненайшли_виконавця_виберіть_інше' => 'If you can not find artist, select "another"',
     'якщо_ви_ненайшли_виконавця_виберіть_інше' => 'if you can not find artist, select "another"',
     'Якщо_ви_ненайшли_категорію_виберіть_інше' => 'If you do not find a category choose "Another"',

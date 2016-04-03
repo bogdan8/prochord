@@ -34,7 +34,7 @@ class Performer extends Model
      * ----------------------------------------------------------------**/
     public function getActivePag()
     {
-        return $this->published()->paginate(30);
+        return $this->published()->paginate(15);
     }
     /**-------------------------------------------------------------
      * End
@@ -64,7 +64,7 @@ class Performer extends Model
      * ----------------------------------------------------------------**/
     public function sortPerformer($sort, $sortBy)
     {
-        return $this->published()->orderBy($sort, $sortBy)->paginate(30);
+        return $this->published()->orderBy($sort, $sortBy)->paginate(15);
 
     }
     /**-------------------------------------------------------------

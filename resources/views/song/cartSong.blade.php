@@ -193,7 +193,7 @@
                                             {{trans('translation.Скачати')}}
                                             <?php
                                             $type = substr($cartSong->media_document, strlen($cartSong->media_document) - 4);
-                                            $type == '.zip' ? $type = '.gp3-4-5' : 0 ;
+                                            $type == '.zip' ? $type = '.gp3-4-5' : 0;
                                             ?>
                                             {{$type}}
                                         </p>
@@ -231,64 +231,9 @@
                     @endif
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="panel panel-success" style="margin-top: 20px;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{{trans('translation.Найбільш_переглянуті_пісні')}}</h3>
-                    </div>
-                    <div class="panel-body">
-                        @foreach($most_popular as $item)
-                            <a class="btn btn-primary my_btn"
-                               href="/songs/{{$item->slug}}">
-                                <p style="float: left;">
-                                    {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
-                                </p>
-                            <span class="songIconCountRight">
-                                <i class="fa fa-eye"></i>
-                                {{$item->count_views_song}}
-                                <i class="fa fa-comments-o"></i>
-                                {!! count($item->songComment) !!}
-                                @if(!empty($item->video))
-                                    <i class="fa fa-youtube-play"></i>
-                                @endif
-                                @if(!empty($item->media_document))
-                                    <i class="fa fa-file"></i>
-                                @endif
-                            </span>
-                            </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{{trans('translation.Остані_додані_пісні')}}</h3>
-                    </div>
-                    <div class="panel-body">
-                        @foreach($last_add as $item)
-                            <a class="btn btn-primary my_btn"
-                               href="/songs/{{$item->slug}}">
-                                <p style="float: left;">
-                                    {!! mb_substr(strip_tags($item->title),0 , 15)!!}...
-                                </p>
-                            <span class="songIconCountRight">
-                                <i class="fa fa-eye"></i>
-                                {{$item->count_views_song}}
-                                <i class="fa fa-comments-o"></i>
-                                {!! count($item->songComment) !!}
-                                @if(!empty($item->video))
-                                    <i class="fa fa-youtube-play"></i>
-                                @endif
-                                @if(!empty($item->media_document))
-                                    <i class="fa fa-file"></i>
-                                @endif
-                            </span>
-                            </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
+            <!-- right panel -->
+            @include('song.rightPanel.cartSong')
+                    <!-- end right panel -->
         </div>
         <!-- comments -->
         @include('song.comments.song')

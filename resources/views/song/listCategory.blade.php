@@ -79,10 +79,12 @@
                         </div>
                     </div>
                 </div>
-                @include('song.listCategoryRight')
+                <!-- right panel -->
+                @include('song.rightPanel.listCategory')
+                        <!-- end right panel -->
             </div>
             <!-- Comments -->
             @include('song.comments.category')
-            <!-- End comments -->
+                    <!-- End comments -->
         </div>
 @stop
