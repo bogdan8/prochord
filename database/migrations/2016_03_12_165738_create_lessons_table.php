@@ -14,15 +14,15 @@ class CreateLessonsTable extends Migration
     {
         Schema::create('lessons', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('number_lesson', 11);
+            $table->integer('number_lesson');
             $table->string('title');
             $table->string('title_rus');
             $table->string('title_eng');
             $table->longText('body');
             $table->longText('body_rus');
             $table->longText('body_eng');
-            $table->datetime('date');
-            $table->integer('viewed_lesson', 11);
+            $table->dateTime('date');
+            $table->integer('viewed_lesson');
             $table->timestamps();
         });
     }

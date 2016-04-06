@@ -43,7 +43,7 @@ class Song extends Model
      * ----------------------------------------------------------------**/
     public function getActiveSongs()
     {
-        return $this->published()->paginate(30);
+        return $this->published()->orderBy('slug', 'asc')->paginate(20);
     }
     /**-------------------------------------------------------------
      * End

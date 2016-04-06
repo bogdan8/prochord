@@ -23,6 +23,11 @@ class LessonsController extends MainController
         return view('lessons.cart', $this->data);
     }
 
+    /**
+     * @param $id
+     * @param LessonsComment $comment
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\JsonResponse|\Illuminate\View\View
+     */
     public function add($id, LessonsComment $comment)
     {
         /**-------------------------------------------------------------

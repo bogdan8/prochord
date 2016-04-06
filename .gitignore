@@ -1,3 +1,5 @@
+/vendor
+/.gitignore
 Homestead.yaml
 Homestead.json/public/uploads/media_documents/6KnUY1TDfNxe0H1P9dFE.zip
 .env
@@ -32,3 +34,9 @@ Homestead.json/public/uploads/media_documents/6KnUY1TDfNxe0H1P9dFE.zip
 /public/uploads/performer/YESQDijs1AgFIweWQbrKqAjsgY5ux7l6.jpg
 /public/uploads/performer/YGnXklgiEBlX8NFyNmFlO5FctVqSPRtH.jpg
 /public/uploads/media_documents/6KnUY1TDfNxe0H1P9dFE.zip
+/.idea/dictionaries/human.xml
+/.idea/dictionaries/root.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/jsLinters/jshint.xml
+/.idea/jsLinters/jslint.xml

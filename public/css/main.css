@@ -469,6 +469,10 @@ textarea.form_control {
     font: italic 14pt 'Times New Roman', Times, serif;
 }
 
+#song-body-fonts a {
+    color: #1B6060 ;
+}
+
 /* lessons */
 .index-lessons-btn {
     background-color: #b15315;

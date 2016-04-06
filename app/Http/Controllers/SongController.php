@@ -225,37 +225,7 @@ class SongController extends MainController
         /**-------------------------------------------------------------
          * End add a comment to song
          * ----------------------------------------------------------------**/
-        /**-------------------------------------------------------------
-         * Like song
-         * ----------------------------------------------------------------**/
-        if (isset($_POST['Like'])) {
-            $song_id = \Input::get('song_id'); // Id writes songs
-            $selectHeart = $this->song->getAddressHeart($song_id);
-            $increaseNumber = $selectHeart->heart + 1;
-            $selectAddress = $selectHeart->address; //Writes to change ip that is in the database
-            $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
-            if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
-                $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
-            } else {
-                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
-                $this->data['Like'] = trans('translation.Вам_сподобалось');
-            }
-        } elseif (isset($_POST['UnLike'])) {
-            $song_id = \Input::get('song_id');
-            $selectHeart = $this->song->getAddressHeart($song_id);
-            $increaseNumber = $selectHeart->heart - 1;
-            $selectAddress = $selectHeart->address;
-            $userAddress = $_SERVER ['REMOTE_ADDR'];
-            if ($selectAddress == $userAddress) {
-                $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
-            } else {
-                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
-                $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
-            }
-        }
-        /** -------------------------------------------------------------
-         * End like song
-         * ----------------------------------------------------------------**/
+        $this->like_song();
         /**-------------------------------------------------------------
          * Count the number of times songs and overwrites data in the database
          * ----------------------------------------------------------------**/
@@ -278,7 +248,7 @@ class SongController extends MainController
          * ----------------------------------------------------------------**/
         $this->data['songComment'] = $songComment->getActive($idSong);
         $this->data['performer'] = $this->performer->getActive();
-
+        $this->array_tabulature();
         return view('song.cartSong', $this->data);
 
     }
@@ -312,37 +282,7 @@ class SongController extends MainController
         /**-------------------------------------------------------------
          * End of adding comments to songs
          * ----------------------------------------------------------------**/
-        /**-------------------------------------------------------------
-         * like song
-         * ----------------------------------------------------------------**/
-        if (isset($_POST['Like'])) {
-            $song_id = \Input::get('song_id'); // Id writes songs
-            $selectHeart = $this->song->getAddressHeart($song_id);
-            $increaseNumber = $selectHeart->heart + 1;
-            $selectAddress = $selectHeart->address; // Writes to change ip that is in the database
-            $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
-            if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
-                $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
-            } else {
-                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
-                $this->data['Like'] = trans('translation.Вам_сподобалось');
-            }
-        } elseif (isset($_POST['UnLike'])) {
-            $song_id = \Input::get('song_id');
-            $selectHeart = $this->song->getAddressHeart($song_id);
-            $increaseNumber = $selectHeart->heart - 1;
-            $selectAddress = $selectHeart->address;
-            $userAddress = $_SERVER ['REMOTE_ADDR'];
-            if ($selectAddress == $userAddress) {
-                $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
-            } else {
-                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
-                $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
-            }
-        }
-        /** -------------------------------------------------------------
-         * End like song
-         * ----------------------------------------------------------------**/
+        $this->like_song();
         /**-------------------------------------------------------------
          * Retrieves category properly that song
          * ---------------------------------------------------------------**/
@@ -368,7 +308,7 @@ class SongController extends MainController
         $this->data['cartSong'] = $this->song->oneSong($slug);
         $this->data['songComment'] = $songComment->getActive($idSong);
         $this->data['performer'] = $this->performer->getActive();
-
+        $this->array_tabulature();
         return view('song.cartSong', $this->data);
 
     }
@@ -407,5 +347,55 @@ class SongController extends MainController
         $this->data['performer'] = $this->performer->getActive();
         return view('song.addSong', $this->data);
 
+
+    }
+
+    public function like_song(){
+        /**-------------------------------------------------------------
+         * like song
+         * ----------------------------------------------------------------**/
+        if (isset($_POST['Like'])) {
+            $song_id = \Input::get('song_id'); // Id writes songs
+            $selectHeart = $this->song->getAddressHeart($song_id);
+            $increaseNumber = $selectHeart->heart + 1;
+            $selectAddress = $selectHeart->address; // Writes to change ip that is in the database
+            $userAddress = $_SERVER ['REMOTE_ADDR']; // Record user ip
+            if ($selectAddress == $userAddress) { // Checks ip address that it was impossible to vote 2 times
+                $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
+            } else {
+                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
+                $this->data['Like'] = trans('translation.Вам_сподобалось');
+            }
+        } elseif (isset($_POST['UnLike'])) {
+            $song_id = \Input::get('song_id');
+            $selectHeart = $this->song->getAddressHeart($song_id);
+            $increaseNumber = $selectHeart->heart - 1;
+            $selectAddress = $selectHeart->address;
+            $userAddress = $_SERVER ['REMOTE_ADDR'];
+            if ($selectAddress == $userAddress) {
+                $this->data['error_like'] = trans('translation.З_вашої_ip_уже_голосували');
+            } else {
+                $this->song->addOneHeart($song_id, $increaseNumber, $userAddress);
+                $this->data['UnLike'] = trans('translation.Вам_не_сподобалось');
+            }
+        }
+        /** -------------------------------------------------------------
+         * End like song
+         * ----------------------------------------------------------------**/
+    }
+
+    public function array_tabulature()
+    {
+        return $this->data['arr_letter'] = [
+            'Cm', 'C#m', 'Dm', 'D#m', 'Em', 'Fm', 'F#m', 'Bb', 'F#9', 'G9', 'G#9', 'A9', 'B9', 'D#9', 'F9', 'E9',
+            'Gm', 'G#m', 'Am', 'Bm', 'Hm7', 'C7', 'C#7', 'D7', 'D#7', 'E7', 'F7', 'F#7', 'G7', 'G#7', 'A7', 'B7', 'H7',
+            'm7', 'Cm7', 'C#m7', 'Dm7', 'D#m7', 'Em7', 'Fm7', 'F#m7', 'Gm7', 'G#m7', 'Am7', 'Bm7', 'Hm7', 'maj', 'Cmaj',
+            'C#maj', 'Dmaj', 'D#maj', 'Emaj', 'Fmaj', 'F#maj', 'Gmaj', 'G#maj', 'Amaj', 'Bmaj', 'Hmaj', 'dim', 'Cdim', 'C#dim',
+            'Ddim', 'D#dim', 'F#dim', 'Gdim', 'G#dim', 'Adim', 'Bdim', 'Hdim', 'C6', 'C#6', 'D6', 'D#6', 'E6', 'F6', 'F#6',
+            'G6', 'G#6', 'A6', 'B6', 'H6', 'm6', 'Cm6', 'C#m6', 'Dm6', 'Em6', 'Fm6', 'F#m6', 'Gm6', 'G#m6', 'Am6', 'Bm6', 'Hm6',
+            'C4', 'C#4', 'D4', 'D#4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'B4', 'H4', 'm4', 'Cm4', 'C#m4', 'Dm4', 'D#m4', 'Em4',
+            'Fm4', 'F#m4', 'Gm4', 'G#m4', 'Am4', 'Bm4', 'Hm4', 'C9', 'C#9', 'D9', 'D#9', 'E9', 'F9', 'H9', 'C', 'C#',
+            'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'B', 'Hm'
+        ];
     }
 }

@@ -123,7 +123,15 @@
                                             <p>
                                                 {{trans('translation.Як_грати')}} :
                                                 <br/>
-                                                {!! $cartSong->tabulature!!}
+                                                <?php
+                                                $tabulature = str_replace('Am', '<a href="">Am</a>', $cartSong->tabulature);
+                                                for ($i = 0; $i < count($arr_letter); $i++) {
+                                                    $tabulature = str_replace($arr_letter[$i] . '&nbsp;', '<a>' . $arr_letter[$i] . '</a>', $tabulature);
+                                                    $tabulature = str_replace($arr_letter[$i] . ' ', '<a>' . $arr_letter[$i] . '</a>', $tabulature);
+                                                }
+                                                echo $tabulature;
+                                                ?>
+                                                ?>
                                             </p>
                                         @endif()
                                     </div>
@@ -154,7 +162,16 @@
                                     <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
                                     </div>
                                     <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" id="song-body-fonts">
-                                        <p>{!! strtr($cartSong->body, "_", " ") !!}</p>
+                                        <?php
+                                        $strtr = strtr($cartSong->body, "_", " ");
+                                        $body = str_replace('Am', '<a href="">Am</a>', $strtr);
+                                        for ($i = 0; $i < count($arr_letter); $i++) {
+                                            $body = str_replace($arr_letter[$i] . '&nbsp;', '<a>' . $arr_letter[$i] . '</a>', $body);
+                                            $body = str_replace($arr_letter[$i] . ' ', '<a>' . $arr_letter[$i] . '</a>', $body);
+                                            $body = str_replace('  ' . $arr_letter[$i], '<a>' . $arr_letter[$i] . '</a>', $body);
+                                        }
+                                        echo $body;
+                                        ?>
                                     </div>
                                 </div>
                             </div>
