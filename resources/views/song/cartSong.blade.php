@@ -92,7 +92,7 @@
 
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                         @if(!empty($cartSong->performer_id))
                                             <p>
                                                 {{trans('translation.Виконавець')}} :
@@ -118,7 +118,7 @@
 
                                         @endif
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                         @if(!empty($cartSong->tabulature))
                                             <p>
                                                 {{trans('translation.Як_грати')}} :
@@ -131,12 +131,38 @@
                                                 }
                                                 echo $tabulature;
                                                 ?>
-                                                ?>
                                             </p>
                                         @endif()
                                     </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                        <!-- script to share the song in social networks-->
+                                        <script type="text/javascript">(function () {
+                                                if (window.pluso)if (typeof window.pluso.start == "function") return;
+                                                if (window.ifpluso == undefined) {
+                                                    window.ifpluso = 1;
+                                                    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                                    s.type = 'text/javascript';
+                                                    s.charset = 'UTF-8';
+                                                    s.async = true;
+                                                    s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                                    var h = d[g]('body')[0];
+                                                    h.appendChild(s);
+                                                }
+                                            })();
+                                        </script>
+                                        <div data-description="{{ strtr($cartSong->body,"_"," ")}}" style="margin-left: 20px; "
+                                             data-title="{{$cartSong->title}}"
+                                             data-url="http://test.ifka.kr.ua/songs/{{$cartSong->title}}" class="pluso"
+                                             data-background="transparent"
+                                             data-options="medium,square,multiline,horizontal,counter,theme=04"
+                                             data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print">
+
+                                        </div>
+                                        <!-- End script to share the song in social networks-->
+                                    </div>
                                 </div>
                                 <!-- text settings -->
+                                <br />
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                                         <h4 style="color: #1B602C;">{{trans('translation.Шрифт')}} :</h4>
@@ -219,30 +245,6 @@
                             @endif
                         </div>
                     </div>
-                    <!-- script to share the song in social networks-->
-                    <script type="text/javascript">(function () {
-                            if (window.pluso)if (typeof window.pluso.start == "function") return;
-                            if (window.ifpluso == undefined) {
-                                window.ifpluso = 1;
-                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                                s.type = 'text/javascript';
-                                s.charset = 'UTF-8';
-                                s.async = true;
-                                s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
-                                var h = d[g]('body')[0];
-                                h.appendChild(s);
-                            }
-                        })();
-                    </script>
-                    <div data-description="{{ strtr($cartSong->body,"_"," ")}}" style="margin-left: 20px; "
-                         data-title="{{$cartSong->title}}"
-                         data-url="http://test.ifka.kr.ua/songs/{{$cartSong->title}}" class="pluso"
-                         data-background="transparent"
-                         data-options="medium,square,multiline,horizontal,counter,theme=04"
-                         data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print">
-
-                    </div>
-                    <!-- End script to share the song in social networks-->
                     @if($cartSong->who_added != 'admin')
                         <h3 class="who-added-song">{{trans('translation.Дякуємо').' `'.$cartSong->who_added.'`'}} {{trans('translation.за_добавлену_пісню')}}</h3>
                     @endif
