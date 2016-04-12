@@ -123,6 +123,7 @@ class SongController extends MainController
          * End of sorting the list of songs
          * ----------------------------------------------------------------**/
         $this->data['most_popular'] = $this->song->most_popular();
+        $this->data['performer'] = $this->performer->getActive();
         $this->data['last_add'] = $this->song->last_add();
         if ($this->request->ajax()) {
             return \response()->json(view('song.ajaxPaginate.ListSong', $this->data)->render());

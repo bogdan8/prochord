@@ -197,41 +197,38 @@ $(document).ready(function () {
     var infoSuccessVoting = $('.infoSuccessVoting');
     var infoErrorVoting = $('.infoErrorVoting');
     var inp = document.getElementsByName('voting');
-    for (var i = 0; i < 5; i++) {
-        $('#formVoting' + i).submit(function (e) {
-            e.preventDefault();
-            var formData = new FormData();
-            formData.append('voting_id', $('#voting_id').val());
-            for (var i = 0; i < inp.length; i++) {
-                if (inp[i].type === "radio" && inp[i].checked) {
-                    formData.append('voting_value', inp[i].value);
-                }
+    $('#formVoting').submit(function (e) {
+        //console.log($(this).data('id'));
+        e.preventDefault();
+        var formData = new FormData();
+        formData.append('voting_id', $('#voting_id').val());
+        for (var i = 0; i < inp.length; i++) {
+            if (inp[i].type === "radio" && inp[i].checked) {
+                formData.append('voting_value', inp[i].value);
             }
-            $.ajax({
-                url: '',
-                method: 'post',
-                processData: false,
-                contentType: false,
-                cache: false,
-                dataType: 'json',
-                data: formData,
-                success: function (data) {
-                    infoErrorVoting.hide().find('ul').empty();
-                    if (!data.success) {
-                        console.log('aa');
-                        infoErrorVoting.find('ul').append('<li>' + data.errors + '</li>');
-                        infoErrorVoting.slideDown();
-                    } else {
-                        console.log('bb');
-                        infoSuccessVoting.find('ul').append('<li>Ви успішно проголосували</li>');
-                        infoSuccessVoting.slideDown();
-                    }
-                },
-                error: function () {
+        }
+        $.ajax({
+            url: '',
+            method: 'post',
+            processData: false,
+            contentType: false,
+            cache: false,
+            dataType: 'json',
+            data: formData,
+            success: function (data) {
+                infoErrorVoting.hide().find('ul').empty();
+                if (!data.success) {
+                    infoErrorVoting.find('ul').append('<li>' + data.errors + '</li>');
+                    infoErrorVoting.slideDown();
+                } else {
+                    infoSuccessVoting.find('ul').append('<li>Ви успішно проголосували</li>');
+                    infoSuccessVoting.slideDown();
                 }
-            });
-        })
-    }
+            },
+            error: function () {
+            }
+        });
+    });
     /**------------------------ End ajax voting form submit -------------------------- */
     /**------------------------ Change font-size in cartSong -------------------------- */
     $('#value').text('14');

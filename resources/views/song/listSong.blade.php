@@ -28,7 +28,12 @@
                                 <a class="btn btn-primary my_btn"
                                    href="/songs/{{$item->slug}}">
                                     <p class="computer-title">
-                                        {{$item->title}}
+                                        {{$item->title}} -
+                                    @foreach($performer as $perf)
+                                            @if($item->performer_id == $perf->id)
+                                                {{$perf->title}}
+                                            @endif
+                                        @endforeach
                                     </p>
 
                                     <p class="phone-title" style="display: none; float: left;">

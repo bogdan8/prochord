@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="panel-body voting">
-                    <form method="post" id="formVoting{{$i}}">
+                    <form method="post" data-id="{{$i}}" id="formVoting">
                         {!! csrf_field() !!}
                         @foreach($voting_list as $vot_list)
                             @if($vot->id == $vot_list->voting_id )
