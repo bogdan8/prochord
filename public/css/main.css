@@ -273,6 +273,10 @@ a:hover {
     margin-top: -30px;
 }
 
+.performerIconCount {
+    float: right;
+}
+
 .songIconCountRight {
     float: right;
     margin-right: 10px;

@@ -2,13 +2,13 @@
     @foreach($getSong as $item)
         <a class="btn btn-primary my_btn"
            href="/songs/{{$item->title}}">
-            <p class="computer-title">
-                {{$item->title}}
+            <p class="computer-title" style="float: left;">
+                {!! mb_substr(strip_tags($item->title),0 , 30)!!}...
             </p>
             <p class="phone-title" style="display: none; float: left;">
                 {!! mb_substr(strip_tags($item->title),0 , 13)!!}...
             </p>
-            <span class="songIconCount">
+            <span class="performerIconCount">
                 <i class="fa fa-eye"></i>
                 {{$item->count_views_song}}
                 <i class="fa fa-comments-o"></i>

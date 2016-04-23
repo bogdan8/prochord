@@ -31,9 +31,9 @@ class PerformerController extends MainController
          * End retrieves the newest and most popular performers
          * ----------------------------------------------------------------**/
         if ($this->request->ajax()) {
-            return \response()->json(view('song.ajaxPaginate.ListPerformer', $this->data)->render());
+            return \response()->json(view('performer.ajaxPaginate.ListPerformer', $this->data)->render());
         }
-        return view('song.listPerformer', $this->data);
+        return view('performer.listPerformer', $this->data);
     }
 
     public function cartPerformers($slug)
@@ -56,9 +56,9 @@ class PerformerController extends MainController
          * ----------------------------------------------------------------**/
         $this->data['cartPerformer'] = $this->performer->onePerformer($slug);
         if ($this->request->ajax()) {
-            return \response()->json(view('song.ajaxPaginate.CartPerformer', $this->data)->render());
+            return \response()->json(view('performer.ajaxPaginate.CartPerformer', $this->data)->render());
         }
-        return view('song.cartPerformer', $this->data);
+        return view('performer.cartPerformer', $this->data);
 
     }
 }
