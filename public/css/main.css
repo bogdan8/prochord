@@ -7,7 +7,21 @@ ul.no-list-style {
 +	nav
 --------------------------------------------------------------------------*/
 #ha-header {
-    opacity: .9;
+    opacity: .8;
+    background: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #1D1919;
 }
 
 /*--------------------------------------------------------------------------
@@ -474,7 +488,7 @@ textarea.form_control {
 }
 
 #song-body-fonts a {
-    color: #1B6060 ;
+    color: #1B6060;
 }
 
 /* lessons */
