@@ -29,6 +29,18 @@ return [
             'location' => public_path() . '/uploads/chord/original/',
 
         ],
+        'description' => [
+            'title' => 'Опис',
+            'type' => 'text',
+        ],
+        'description_rus' => [
+            'title' => 'Опис на rus',
+            'type' => 'text',
+        ],
+        'description_eng' => [
+            'title' => 'Опис на eng',
+            'type' => 'text',
+        ],
     ],
     'filters' => array(
         'active' => [

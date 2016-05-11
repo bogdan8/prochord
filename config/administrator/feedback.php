@@ -10,7 +10,7 @@ return [
         'role' => [
             'title' => 'Адміністратор?',
         ],
-        'title' => [
+        'name' => [
             'title' => 'Назва',
         ],
         'email' => [
@@ -25,7 +25,7 @@ return [
             'title' => 'Адміністратор?',
             'type' => 'bool',
         ],
-        'title' => [
+        'name' => [
             'title' => 'Назва',
             'type' => 'text',
         ],

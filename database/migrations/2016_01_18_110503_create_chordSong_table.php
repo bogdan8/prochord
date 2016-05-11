@@ -17,6 +17,9 @@ class CreateChordSongTable extends Migration
             $table->boolean('active');
             $table->string('title');
             $table->string('image');
+            $table->string('description');
+            $table->string('description_rus');
+            $table->string('description_eng');
             $table->timestamps();
         });
     }
