@@ -1,4 +1,8 @@
 <style>
+    body{
+        background: url("http://www.magic4walls.com/wp-content/uploads/2014/05/music-guitar-daisy-singer-photo-moment-girl-vintage-wallpaper.jpg")center center fixed;
+        background-size: 100%;
+    }
     .container {
         text-align: center;
         vertical-align: middle;
@@ -22,12 +26,5 @@
     </div>
     <div class="content">
         <div class="title"><p>Гарного вам дня!</p></div>
-    </div>
-    <div class="content">
-        <div class="title">
-            <p style="margin-bottom: 50px;">
-                <img class="imgNews" src="/image/admin/admin_min.jpg"/>
-            </p>
-        </div>
     </div>
 </div>
