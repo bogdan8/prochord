@@ -17,6 +17,7 @@ ul.no-list-style {
     color: #ffffff;
     background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -150,6 +151,7 @@ a:hover {
 }
 
 .img-thumbnail {
+    margin-top: 10px;
     height: 200px;
     width: 100%;
     box-shadow: 0 5px #FFF inset, 0 0 8px #C8CFE6;
@@ -575,3 +577,24 @@ textarea.form_control {
 
 /* end increase-pictures */
 /* end performer */
+
+/* chord */
+.chord-note-image {
+    margin: 50px;
+}
+
+.span-description-chord {
+    display: inline-block;
+    padding: 2px 10px;
+    background: transparent;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: 0 1px 2px #222;
+    color: #FFF;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+/* end chord */
