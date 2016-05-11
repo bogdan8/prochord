@@ -12,7 +12,7 @@
         }
 
         body {
-            background: url(/image/errors/404/fon_error.jpg) center center fixed;
+            background: url("http://oformi.net/uploads/gallery/main/255/1367778883_23.jpg")center center fixed;
             background-size: 100%;
             margin: 0;
             padding: 0;
@@ -37,7 +37,7 @@
 
         .title {
             font-size: 40px;
-            color: #000000;
+            color: #ffffff;
         }
     </style>
 </head>
