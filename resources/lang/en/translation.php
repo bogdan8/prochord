@@ -79,6 +79,7 @@ return [
     'звязок_з_нами' => "contact Us",
     'Звязатися' => "Contact",
     'звязатися' => "contact",
+    'опис_про_сайт' => 'The site contains many kinds of different music, video tutorials, and much will come to you all so that you learned to play guitar.',
     /* footer */
     /* project */
     'Проекти' => 'Projects',
@@ -137,6 +138,10 @@ return [
     'кількість_голосів' => 'number of votes',
     'З_вашої_ip_уже_голосували'=>'From your Ip has vote',
     'Ви_успішно_проголосували'=>'You have successfully voted',
+    'Показати_поля'=>'Show fields',
+    'показати_поля'=>'show fields',
+    'Сховати_поля'=>'Hide fields',
+    'сховати_поля'=>'hide fields',
     /* voting */
     /* alerts */
     'Помилка' => 'Error',

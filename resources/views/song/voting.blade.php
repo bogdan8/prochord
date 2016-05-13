@@ -25,8 +25,8 @@
                         <p>{{$vot->title_eng}}</p>
                     @endif
                     <div class="voting-btn">
-                        <button class="btn btn-success btn-show">Показати поля</button>
-                        <button class="btn btn-danger btn-hide">Сховати поля</button>
+                        <button class="btn btn-success btn-show">{{trans('translation.Показати_поля')}}</button>
+                        <button class="btn btn-danger btn-hide">{{trans('translation.Сховати_поля')}}</button>
                     </div>
                 </div>
                 <div class="panel-body voting">

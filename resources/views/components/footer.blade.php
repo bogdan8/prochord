@@ -33,11 +33,7 @@
                     2016 {{trans('translation.Пісні_під_гітару')}}!
                     <br/>
 
-                    <p>{{trans('translation.На_цьому_сайті_зібрано_багато_різної_музики')}}, </p>
-
-                    <p>{{trans('translation.та_багато_відеоуроків_в_яких_ви_найдете_все')}}, </p>
-
-                    <p>{{trans('translation.для_того_щоб_користувачі_навчились_грати_на_гітарі')}}</p>
+                    <p>{{trans('translation.опис_про_сайт')}}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
